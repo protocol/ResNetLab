@@ -1,5 +1,3 @@
-# ResNetLab
-
 <p align="center">
   <a href="https://research.protocol.ai/research/groups/resnetlab/" title="ResNetLab">
     <img src="https://research.protocol.ai/images/resnetlab/resnetlab_logo_blue.svg" width="244" />
