@@ -30,3 +30,7 @@ In short, the aim of the project is two-fold: to drive speed-ups in file-sharing
 
 ### Talks
 * [Introduction to Beyond Bistap project](): Introductory talk to show the initial work and motivate the project.
+
+### Blog Posts
+* [Beyond Bitswap](https://adlrocha.substack.com/p/adlrocha-beyond-bitswap-i)
+* [Network Coding in P2P Networks](https://adlrocha.substack.com/p/adlrocha-network-coding-in-p2p-networks)
