@@ -174,8 +174,8 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 
 ### Team
 
-- David Dias - Research Engineer & ResNetLab Lead
-- Yiannis Psaras - Senior Researcher
+- David Dias - Research Engineer & ResNetLab Lead (PI)
+- Yiannis Psaras - Research Scientist
 - Alfonso de la Rocha - Research Engineer
 - Vasilis Giotsas - Research Engineer
 
