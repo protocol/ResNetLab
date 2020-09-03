@@ -36,7 +36,7 @@
 
 The lab's genesis comes from a need present in the IPFS and libp2p projects to amp their research efforts to tackle the critical challenges of scaling up networks to planet scale and beyond. The Lab is designed to take ownership of the earlier stages on the research pipeline, from ideas to specs and to code.
 
-![](/images/resnetlab/research-pipeline-map.png)
+![](https://research.protocol.ai/images/resnetlab/research-pipeline-map.png)
 
 ## Research
 
