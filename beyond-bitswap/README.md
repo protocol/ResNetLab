@@ -29,7 +29,8 @@ In short, the aim of the project is two-fold: to drive speed-ups in file-sharing
 * [Bitswap fork](https://github.com/adlrocha/go-bitswap): This fork of `go-bitswap` is the one being used to implement some of the RFCs and where additional metrics that want to be tracked in the testbed are being included. Expect RFCs to be imeplemented in different branches.
 
 ### Talks
-* [Introduction to Beyond Bistap project](): Introductory talk to show the initial work and motivate the project.
+* [Introduction to Beyond Bitswap project](): Introductory talk to show the initial work and motivate the project.
+* [How rfcBBL104 was implemented](https://drive.google.com/file/d/1YS3RoNdeeG1vauJpfvHvKUQzPHr97eHF/view?usp=sharing): Video on how the implementation of how rfcBBL104 was approached. 
 
 ### Blog Posts
 * [Beyond Bitswap](https://adlrocha.substack.com/p/adlrocha-beyond-bitswap-i)
