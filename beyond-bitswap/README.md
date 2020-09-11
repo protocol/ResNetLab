@@ -24,6 +24,9 @@ In short, the aim of the project is two-fold: to drive speed-ups in file-sharing
 * [Enhancements RFC](https://docs.google.com/document/d/1zjJCZel8zJzgK3XuHK0YZlNffEHThq7tUOssGgRTryY/edit#heading=h.nxkc23tlbqhl): A list of enhancements proposals and ideas to improve file-sharing in IPFS.
 * [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project.
 
+### Enhancement RFCs
+* [RFC|BB|L1-04: Track WANT messages for future queries]():
+
 ### Code
 * [Testbed and related assets](https://github.com/adlrocha/beyond-bitswap/): This repo includes all the code used for the implementation and other auxiliary testing assets. Additional documentation will be provided in the repo.
 * [Bitswap fork](https://github.com/adlrocha/go-bitswap): This fork of `go-bitswap` is the one being used to implement some of the RFCs and where additional metrics that want to be tracked in the testbed are being included. Expect RFCs to be imeplemented in different branches.
@@ -35,3 +38,4 @@ In short, the aim of the project is two-fold: to drive speed-ups in file-sharing
 ### Blog Posts
 * [Beyond Bitswap](https://adlrocha.substack.com/p/adlrocha-beyond-bitswap-i)
 * [Network Coding in P2P Networks](https://adlrocha.substack.com/p/adlrocha-network-coding-in-p2p-networks)
+* [Hash Array Mapped Tries](https://adlrocha.substack.com/p/adlrocha-hash-array-mapped-tries)
