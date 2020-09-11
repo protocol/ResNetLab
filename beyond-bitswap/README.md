@@ -25,7 +25,7 @@ In short, the aim of the project is two-fold: to drive speed-ups in file-sharing
 * [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project.
 
 ### Enhancement RFCs
-* [RFC|BB|L1-04: Track WANT messages for future queries]():
+* [RFC|BB|L1-04: Track WANT messages for future queries](./rfc/rfcbbL104.md)
 
 ### Code
 * [Testbed and related assets](https://github.com/adlrocha/beyond-bitswap/): This repo includes all the code used for the implementation and other auxiliary testing assets. Additional documentation will be provided in the repo.
