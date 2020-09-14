@@ -121,7 +121,7 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
     <td>As the IPFS system is evolving and growing, communicating new entries to the IPNS is becoming an issue due to the increased network and node load requirements. The expected growth of the system to multiple millions of nodes is going to create significant performance issues, which might render the system unusable. Despite the significant amount of related literature on the topic of pub/sub, very few systems have been tested to that level of scalability, while those that have been are mostly cloud-based, managed and structured infrastructures.</td>
     <td>
       <ul>
-        <li><a href="https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-8-pubsub.md">Scalability Bounds of P2P Pub/Sub (libp2p floodsub, gossipsub and episub)</a></li>
+        <li><a href="https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-8-pubsub.md">RFP-8: Scalability Bounds of P2P Pub/Sub (libp2p floodsub, gossipsub and episub)</a></li>
       </ul>
     </td>
   </tr>  
