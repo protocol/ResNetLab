@@ -1,6 +1,6 @@
-#  RFC| BB | L1-02: TTLs for rebroadcasting WANT messages
-Status: `Draft`
-Implementation here:
+#  RFC|BB|L1-02: TTLs for rebroadcasting WANT messages
+* Status: `Draft`
+* Implementation here:
 
 ## Abstract
 

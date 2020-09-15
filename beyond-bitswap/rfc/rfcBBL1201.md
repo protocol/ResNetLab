@@ -1,7 +1,6 @@
-#  RFC| BB | L12-01: Bitswap/Graphsync exchange messages extension and transmission choice
-Status: `Draft`
-
-Implementation here: https://github.com/
+#  RFC|BB|L12-01: Bitswap/Graphsync exchange messages extension and transmission choice
+* Status: `Draft`
+* Implementation here: https://github.com/
 
 ## Abstract
 This RFC proposes expanding Bitswap and Graphsync exchange messages with additional information. This information is used in content requests for receivers to be able to understand clearly the content requested; and in responses so responders can share his specific level of fulfillment of the request to the requestor. With this information the requestor can select the best nodes to perform the actual request to have the best performance possible in the transmission.

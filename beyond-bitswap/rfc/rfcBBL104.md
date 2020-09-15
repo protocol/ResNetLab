@@ -1,13 +1,12 @@
 #  RFC|BB|L1-04: Track WANT messages for future queries
-Status: `Draft`
+* Status: `Draft`
+* Implementation here: https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104
 
 ## Abstract
 
 This RFC proposes to leverage the knowledge acquired when receiving WANT messages sent by others in future requests issued by the peer tracking them. By keeping track of the WANT messages received, a peer will have the possibility to assert the likelihood of a peer having a block after a period of time, the rationale being: if someone asked for this in the past, they probably have it by now. With this information, a peer can issue queries to the peers that might have the block without having to enter in a discovery phase.
 
 <!-- Full description here: https://docs.google.com/document/d/1zjJCZel8zJzgK3XuHK0YZlNffEHThq7tUOssGgRTryY/edit#heading=h.6qnrq913vou6 -->
-
-Implementation here: https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104
 
 ## Shortcomings
 Bitswap nodes currently send WANT messages blindly to all its connected peers. On the other hand, WANT messages include a lot of useful information about “recently accessed content” of a nodes’ connected peers. By tracking this information more directed and efficient searches of content can be performed.
