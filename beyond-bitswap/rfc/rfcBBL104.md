@@ -1,5 +1,5 @@
 #  RFC|BB|L1-04: Track WANT messages for future queries
-
+Status: `Draft`
 
 ## Abstract
 
@@ -45,13 +45,18 @@ Initial explorations indicated that an HAMT with an accumulator like approach ar
    - HAMTRegisry updates the key with the new list of peers. There is a maximum number of entries allowed in each key.
    - The garbage collection strategy will be defined according to the results of the memory footprint tests and the accummulator ceiling.
 
+![](./images/rfcbbL104.png)
+
+# Impact
+We can expect the time to discover content in the network to be reduced.
+
 ## Evaluation Plan
 - [The IPFS File Transfer Benchmarks](https://docs.google.com/document/d/1LYs3WDCwpkrBdfrnB_LE0xsxdMCIhXdCchIkbzZc8OE/edit#heading=h.nxkc23tlbqhl)
 - [x] Create a test case that simulates the interest in a dataset by a growing population of nodes (e.g Use different waves of peers interested in a file). This will create the scenario in which the next wave will benefit from having the knowledge that the first wave might already have the file.
     - [ ] Include noise in the test case. Along with the regularly accessed files, nodes request random CIDs to pollute their registries.
     - [ ] Clear registries between run counts to remove advantage with files with similar blocks.
 - [ ] Track memory footprint of peers.
-![](./images/rfcbbL104.png)
+
 ## Future Work
 - Protocol to share peer-block registries between nodes to increase “local views”.
 - A good idea for reducing the scope of the content we keep track of is to somehow monitor the latency to the node and keep track of content that lives nearby.
