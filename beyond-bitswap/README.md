@@ -27,9 +27,9 @@ In short, the aim of the project is two-fold: to drive speed-ups in file-sharing
 ### Enhancement RFCs
 * [RFC|BB|L1-04: Track WANT messages for future queries](./rfc/rfcBBL104.md)
 * [RFC|BB|L2-03A: Use of compression and adjustable block size](./rfc/rfcBBL203A.md)
-* [RFC|BB | L2-07: Request minimum piece size and content protocol extension](./rfc/rfcBBL207.md)
-* [RFC| BB | L12-01: Bitswap/Graphsync exchange messages extension and transmission choice](./rfc/rfcBBL1201.md)
-* [RFC| BB | L1-02: TTLs for rebroadcasting WANT messages](./rfc/rfcBBL102.md)
+* [RFC|BB|L2-07: Request minimum piece size and content protocol extension](./rfc/rfcBBL207.md)
+* [RFC|BB|L12-01: Bitswap/Graphsync exchange messages extension and transmission choice](./rfc/rfcBBL1201.md)
+* [RFC|BB|L1-02: TTLs for rebroadcasting WANT messages](./rfc/rfcBBL102.md)
 
 
 ### Code
