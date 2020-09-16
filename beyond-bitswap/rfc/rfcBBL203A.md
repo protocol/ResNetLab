@@ -36,7 +36,7 @@ Some of the compression approaches to be explored in this RFC are:
 
     - [x] Evaluate the compression of blocks only (`bs.compressionStrategy = "blocks"`): We compress each block before adding it to the message in [nextEnvelope](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/internal/decision/engine.go#L469) function of engine.go, and then uncompress them in [ReceiveMessage](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/bitswap.go#L458) from bitswap.go. For the compression of blocks, the only thing that is changed for the transmission of the block is the RawData, the CID is kept without change so the block is conveniently identified. It required several changes over unit tests.
 
-    -  [ ] Use [GZip](https://golang.org/pkg/compress/gzip/) as the default compression algorithm (`engine.compressor = "Gzip"`).
+    -  [x] Use [GZip](https://golang.org/pkg/compress/gzip/) as the default compression algorithm (`engine.compressor = "Gzip"`).
 
     -  [ ] Evaluate other compression algorithms (Brotli and gzip are the best alternative, but in case we want to test with other algorithms):
 
