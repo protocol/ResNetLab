@@ -40,7 +40,9 @@ Some of the compression approaches to be explored in this RFC are:
 
     -  [ ] Evaluate other compression algorithms (Brotli and gzip are the best alternative, but in case we want to test with other algorithms):
 
-        -  [ ] [Bzip2 compression](https://golang.org/pkg/compress/bzip2/) 
+        - [ ] [ZDAG](https://github.com/mikeal/zdag) Blocks
+
+        - [ ] [Bzip2 compression](https://golang.org/pkg/compress/bzip2/) 
 
         - [ ]  [XZ compression](https://github.com/ulikunitz/xzhttps://github.com/ulikunitz/xz)
 
@@ -82,6 +84,6 @@ This RFC takes inspiration from:
 ## Results
 
 ## Future Work
--   If the use of exchange request and the negotiation phase for content transmission (RFC | BB | L1/2-01), it makes sense that once identified a specific peer (or a group of them) as the ones storing a large number of the desired blocks, to request more advanced compression and network coding techniques for their transmission.
+-   If the use of exchange requests and the negotiation phase for content transmission (RFC | BB | L1/2-01) is implemented, it makes sense that once identified a specific peer (or a group of them) as the ones storing a large number of the desired blocks, to request more advanced compression and network coding techniques for their transmission.
 
 - Detect the type of data being exchanged in blocks and apply the most suitable compression for the data type, such as [image-specific compression ](https://developers.google.com/speed/webp/docs/compression)if images are being exchanged (for this approach, a node will need to have all the blocks for the data).
