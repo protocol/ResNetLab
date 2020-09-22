@@ -1,6 +1,6 @@
 #  RFC|BB|L1-02: TTLs for rebroadcasting WANT messages
 * Status: `Draft`
-* Implementation here:
+* Implementation here: https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL102
 
 ## Abstract
 
