@@ -31,13 +31,18 @@ Initially, the protocol will be designed using symmetric routing, and will explo
 Again, this proposal should include schemes to avoid flooding attacks and the forgery of responses. It may be sensible to include networking information also in the request to allow easy discovery to forward responses X-hop away.
 
 ## Implementation plan
-- [ ] Include TTL in WANT messages. Nodes receiving the WANT message track the session (creating a new one or updating an existing one), reduce in one the TTL of the WANT message and forward it to its connected peers. Duplicate WANT messages with lower or equal TTL should be discarded to avoid loops (higher TTLs could represent request updates). WANT sessions should be identified at least with the following tuple: {SOURCE, WANT_ID} so nodes know to whom it needs to send discovered blocks.
+- [ ] Include TTL in WANT messages. Nodes receiving the WANT message track the session using indirect sessions, reduce in one the TTL of the WANT message and forward it to its connected peers. Duplicate WANT messages with lower or equal TTL should be discarded to avoid loops (higher TTLs could represent request updates). WANT sessions should be identified at least with the following tuple: {SOURCE, WANT_ID} so nodes know to whom it needs to send discovered blocks. (See figures below for the proposed implementation of the symmetric approach).
 
 - [ ] Test the performance and bandwidth overhead of this scheme compared to plain Bitswap for different values of TTL.
 
 - [ ] Evaluate the use of a symmetric and asymmetric routing approach for the forwarding of discovered blocks.
 
 - [ ] Consider the implementation of "smart TTLs" in WANT requests, so according to the status of the network, bandwidth available, requests alive, number of connections or any other useful value, the TTL is determined.
+
+### Symmetric approach message flows
+![](./images/rfcBBL102-stage1.png)
+![](./images/rfcBBL102-stage2.png)
+![](./images/rfcBBL102-stage3.png)
 
 # Impact
 We should expect a latency reduction in the discovery of content but it may lead to an increase in the bandwidth overhead of the protocol. We do not expect the increase in the bandwidth overhead to be substantial, given that response messages are not big in size
