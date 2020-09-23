@@ -30,7 +30,7 @@ Some of the compression approaches to be explored in this RFC are:
 * Use of different block sizes before compression.
 
 ## Implementation plan
--  [ ] Perform a simple test to evaluate the benefits of "on-the-fly" compression on blocks (to determine if IPFS could benefit from directly exchanging compressed messages and blocks). Evaluate different compression algorithms used in the web.
+-  [x] Perform a simple test to evaluate the benefits of "on-the-fly" compression on blocks (to determine if IPFS could benefit from directly exchanging compressed messages and blocks). Evaluate different compression algorithms used in the web.
 
     -  [x] Evaluate the compression of full Bitswap messages (`bs.compressionStrategy = "full"`): To achieve this we add a compression flag in [Bitswap messages](https://github.com/adlrocha/go-bitswap/blob/master/message/message.go) to be able to identify when messages are compressed. Afterwards, if compression is enabled we need to [compress the stream](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/network/ipfs_impl.go#L240) before sending it. Compressed messages are identified in the [newMessageFromProto](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/message/message.go#L199) of receiving peers, they are uncompressed and processed seamlessly by Bitswap. In order to open the door to the use different compression algorithms and different full-message compression strategies a compressionType has been added to [message.proto](https://github.com/adlrocha/go-bitswap/blob/master/message/pb/message.proto).
 
@@ -79,9 +79,11 @@ This RFC takes inspiration from:
 * [HPACK](https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/)
 * [HTTP Compression](https://developer.mozilla.org/en-US/docs/Web/HTTP/Compression)
 * [Choose best compression algorithm assisted by AI](https://vks.ai/2019-12-05-shrynk-using-machine-learning-to-learn-how-to-compress)
+* [Thorough benchmark of different GZip modes](https://www.rootusers.com/gzip-vs-bzip2-vs-xz-performance-comparison/)
 
 
 ## Results
+![](./images/rfcbbL103A-results.png)
 
 ## Future Work
 -   If the use of exchange requests and the negotiation phase for content transmission (RFC | BB | L1/2-01) is implemented, it makes sense that once identified a specific peer (or a group of them) as the ones storing a large number of the desired blocks, to request more advanced compression and network coding techniques for their transmission.
