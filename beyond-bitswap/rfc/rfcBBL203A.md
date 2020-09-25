@@ -38,7 +38,7 @@ Some of the compression approaches to be explored in this RFC are:
 
     -  [x] Use [GZip](https://golang.org/pkg/compress/gzip/) as the default compression algorithm (`engine.compressor = "Gzip"`).
 
-    - [ ] Instead of compressing fields of the protobuf message, evaluate the compression of the full stream in the [bitswap network](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/network/ipfs_impl.go).
+    - [ ] Instead of compressing fields of the protobuf message, evaluate the compression of the full stream in the [bitswap network](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/network/ipfs_impl.go). Use multicodec to signal that a stream is compressed and evaluate the fact that instead of using a prefix to signal the size of sent messages, in order to be able to leverage streams, use multicodec and `KeepReading` and `EndOfStream` signals in protocol streams so there is no need to know the size of the compressed message beforehand.
 
     -  [ ] Evaluate other compression algorithms (Brotli and gzip are the best alternative, but in case we want to test with other algorithms):
 
