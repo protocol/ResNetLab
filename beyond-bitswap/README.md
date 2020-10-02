@@ -14,7 +14,7 @@ In high level, this project is about:
 
 In short, the aim of the project is two-fold: to drive speed-ups in file-sharing for IPFS and other P2P networks; and to enable a framework for anyone to join the quest of designing, implementing and evaluating brand new file-sharing strategies in P2P networks. 
 
-## Why this project code name?
+## Why the project code name?
 Bitswap has been for some time the file-sharing subsystem within IPFS, then Graphsync came to propose a new way of approaching file-sharing on IPFS. The scope of the project is not only to improve Bitswap's performance, but file-sharing in P2P networks as a whole. We don't restrict ourselves exlusively to Bitswap or IPFS for our exploration.
 
 Being said that, the fact that IPFS had an infrastructure in place to start testing our ideas, and Bitswap being its file-sharing module, made us start our initial explorations over Bitswap and IPFS, but our aim is to go way farther and improve file-sharing performance with new protocols and proposals every P2P network can leverage and benefit from. In short, we want to go "Beyond Bitswap". The project can be considered a success if by the end of it one has a set of pluggable protocols and modules to achieve file-sharing in P2P environments, along with all the testbeds, tools and benchmarks required to improve this protocols and go _"Beyond Bitswap"_.
