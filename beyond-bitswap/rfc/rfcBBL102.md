@@ -16,7 +16,7 @@ Bitswap only sends WANT messages to its directly connected peers. This limits th
 
 ## Description
 
-The idea is to include a TTL to WANT messages. That way instead of forwarding WANT messages to our directly connected peers, we can increase the scope to, for instance, the connected peers of our connected peers (TTL=2). With this, we increase the span of discovery of content without having to resort to the DHT. This TTL needs to be limited to a small number to avoid flooding the network with WANT requests. It also complicates the implementation of the protocol, as now nodes need to track not only sessions from their directly connected peers but also from the ones x-hops away from them. Several design decisions would have to be made in the implementation such as the following (ideally the best value for these fields will be determined in testing. Additionally, we could set them to be dynamic according to the state of the network or the developer's desire. This will be explored in the future work).
+The idea is to include a TTL to WANT messages. That way instead of forwarding WANT messages to our directly connected peers, we can increase the scope to, for instance, the connected peers of our connected peers (TTL=1). With this, we increase the span of discovery of content without having to resort to the DHT. This TTL needs to be limited to a small number to avoid flooding the network with WANT requests. It also complicates the implementation of the protocol, as now nodes need to track not only sessions from their directly connected peers but also from the ones x-hops away from them. Several design decisions would have to be made in the implementation such as the following (ideally the best value for these fields will be determined in testing. Additionally, we could set them to be dynamic according to the state of the network or the developer's desire. This will be explored in the future work).
 
 -   Max TTL allowed. [This study proves](http://conferences2.sigcomm.org/acm-icn/2015/proceedings/p9-wang.pdf) that a Max TTL = 2 achieves the best performance (for moderately popular content) without severe impact in latency, so we can consider this as the baseline value. However, The impact and performance of this will depend heavily on how many connections each node maintains.
 
@@ -31,13 +31,29 @@ Initially, the protocol will be designed using symmetric routing, and will explo
 Again, this proposal should include schemes to avoid flooding attacks and the forgery of responses. It may be sensible to include networking information also in the request to allow easy discovery to forward responses X-hop away.
 
 ## Implementation plan
-- [ ] Include TTL in WANT messages. Nodes receiving the WANT message track the session using indirect sessions, reduce in one the TTL of the WANT message and forward it to its connected peers. Duplicate WANT messages with lower or equal TTL should be discarded to avoid loops (higher TTLs could represent request updates). WANT sessions should be identified at least with the following tuple: {SOURCE, WANT_ID} so nodes know to whom it needs to send discovered blocks. (See figures below for the proposed implementation of the symmetric approach).
+- [X] Include TTL in WANT messages. Nodes receiving the WANT message track the session using indirect sessions, reduce in one the TTL of the WANT message and forward it to its connected peers. Duplicate WANT messages with lower or equal TTL should be discarded to avoid loops (higher TTLs could represent request updates). WANT sessions should be identified at least with the following tuple: {SOURCE, WANT_ID} so nodes know to whom it needs to send discovered blocks. (See figures below for the proposed implementation of the symmetric approach).
 
 - [ ] Test the performance and bandwidth overhead of this scheme compared to plain Bitswap for different values of TTL.
 
 - [ ] Evaluate the use of a symmetric and asymmetric routing approach for the forwarding of discovered blocks.
 
 - [ ] Consider the implementation of "smart TTLs" in WANT requests, so according to the status of the network, bandwidth available, requests alive, number of connections or any other useful value, the TTL is determined.
+
+## Implementation details
+### Basic implementation
+* An additional TTL field has been added to Bitswap WANT entries in Bitswap messages to
+enable the forwarding of exchange requests to peers TTL+1 hops away.
+* Bitswap is set with a defualt TTL of 1, so corresponding messages will only be forwarded
+to nodes two hops away.
+* Sessions now include a TTL parameter to determine how far their WANT messages can go. Sessions started within the peer (because the peer wants a block) are considered `direct`, while the ones triggered from the reception of a WANT mesages with enough TTLs are referred as `indirect` (the peer is doing the work on behalf of another peer and it is not explicitly interested in the block).An `indirect` flag has also been added to sessions in case in the future a different strategy want
+to be implemented for indirect sessions (like the use of a degree to limit the number of WANT messages broadcasted to connected nodes to prevent flooding the network). Currently direct and indirect sessions follow the exact same strategy for block discovery and transmission.
+
+* All the logic around indirect sessions is done in `engine.go`:
+    - The engine tracks the number of indirect sessions opened through an `indirectSession` registry.
+    - Whenever a peer receives a WANT message from which it doesn't have the block and its TTL is not zero, it sends a DONT_HAVE right away, and it triggers a new indirect sessions for those WANT messages with TTL-1.
+    - Whenever a new block or HAVE messages are received in an intermediate node for an active indirect session, these messages are forwarded to the source (the initial requester). This action updates the DONT_HAVE status of the intermediate node so it is again included in the session. 
+        - _We need to be careful, in the current implementation blocks from indirect sessions are stored in the datastore for convenience, but they should be removed once all the interested indirect sessions for the block are closed and they have been successfully forwarded to avoid peers storing content they didn't explicitly requested._
+    - When receiving a HAVE the indirect session will automatically send the WANT-BLOCK to the corresponding peers, we have identified the interest from every peer (including direct ones) so when a peer receives a block for an indirect file it will automatically forward it to the source (there is no need to forward interest for WANT-BLOCKS because this is automatically managed withing the indirect sessions). Indirect sessions work in the same as direct sessions in this first implementation.
 
 ### Symmetric approach message flows
 ![](./images/rfcBBL102-stage1.png)
@@ -48,9 +64,10 @@ Again, this proposal should include schemes to avoid flooding attacks and the fo
 We should expect a latency reduction in the discovery of content but it may lead to an increase in the bandwidth overhead of the protocol. We do not expect the increase in the bandwidth overhead to be substantial, given that response messages are not big in size
 
 ## Evaluation Plan
--   [The IPFS File Transfer benchmarks.](https://docs.google.com/document/d/1LYs3WDCwpkrBdfrnB_LE0xsxdMCIhXdCchIkbzZc8OE/edit#heading=h.nxkc23tlbqhl)
+-  [ ] [The IPFS File Transfer benchmarks.](https://docs.google.com/document/d/1LYs3WDCwpkrBdfrnB_LE0xsxdMCIhXdCchIkbzZc8OE/edit#heading=h.nxkc23tlbqhl)
+    - To evaluate the performance of this RFC we need a network where the `MAX_CONNECTION_RATE` of nodes is small, the number of passive nodes in the network (neither seeding nor leeching content) is high, and the number of seeders providing the content small. This will force content to be several hops away from leechers. Leechers should request the content all at the same time (if done in waves leechers in a wave would become seeders in the next wave and may add noise to the measurement).
 
--   Compare the times a node resorts to DHT according to the TTL used, and the bandwidth overhead due to control messages.
+- [ ] An additional measurement to consider is to compare the times a node needs to resort to the DHT to find the content in plain Bitswap compared to the RFC (this would determine how effective the strategy is). 
 
 ## Prior Work
 This RFC was inspired by this proposal. The RFC is based on the assumption that DHT lookups are slow and therefore is better to increase our “Bitswap span” than resorting to the DHT. It would be great if we could validate this assumption before considering its implementation.

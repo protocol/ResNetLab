@@ -38,15 +38,16 @@ Some of the compression approaches to be explored in this RFC are:
 
     -  [x] Use [GZip](https://golang.org/pkg/compress/gzip/) as the default compression algorithm (`engine.compressor = "Gzip"`).
 
-    - [ ] Instead of compressing fields of the protobuf message, evaluate the compression of the full stream in the [bitswap network](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/network/ipfs_impl.go). Use multicodec to signal that a stream is compressed and evaluate the fact that instead of using a prefix to signal the size of sent messages, in order to be able to leverage streams, use multicodec and `KeepReading` and `EndOfStream` signals in protocol streams so there is no need to know the size of the compressed message beforehand.
+    - [x] Instead of compressing fields of the protobuf message, evaluate the compression of the full stream in the [bitswap network](https://github.com/adlrocha/go-bitswap/blob/d151875a94048c3db59de52b9cb99d0246d74613/network/ipfs_impl.go).
+        * We may choose to use a multicodec to signal that a stream is compressed and evaluate the fact that instead of using a prefix to signal the size of sent messages, in order to be able to leverage streams, use multicodec and `KeepReading` and `EndOfStream` signals in protocol streams so there is no need to know the size of the compressed message beforehand.
 
     -  [ ] Evaluate other compression algorithms (Brotli and gzip are the best alternative, but in case we want to test with other algorithms):
 
         - [ ] [ZDAG](https://github.com/mikeal/zdag) Blocks
 
-        - [ ] [Bzip2 compression](https://golang.org/pkg/compress/bzip2/) 
+        <!-- - [ ] [Bzip2 compression](https://golang.org/pkg/compress/bzip2/) 
 
-        - [ ]  [XZ compression](https://github.com/ulikunitz/xzhttps://github.com/ulikunitz/xz)
+        - [ ]  [XZ compression](https://github.com/ulikunitz/xzhttps://github.com/ulikunitz/xz) -->
 
         - [ ]  Brotli compression (No Golang implementation, [incomplete implementation](https://github.com/dsnet/compress))
 
@@ -64,8 +65,17 @@ Some of the compression approaches to be explored in this RFC are:
 
 -  [ ] From the preliminary tests performed after the above implementations, evaluate if the protocol could benefit from the use of Huffman tables and compressed caches.
 
+## Implementation details
+
+* Block compression: Files within Bitswap are exchanged in the form of blocks. Files are composed of several blocks organized in a DAG structure (with each block having a size limit of 256KB). In this compression approach, we compress blocks before including them in a message and transmitting them to the network.
+* Full message compression: In this compression strategy instead of only compressing blocks we compress every single message before sending it. It is the equivalent of compressing header+body in HTTP.
+* Stream compression: It uses compression at a stream level, so every byte that enters a stream from the node to other peers is compressed (i.e. using a compressed writer).
+
+The preliminary results show how the full message and stream compression strategies lead to the most efficient compression rates compared to the block strategy. Initial tests show an overhead by the use of compression compared to Bitswap without compression. The approach that minimizes the computational footprint is the stream compression. [See a discussion here](https://github.com/protocol/ResNetLab/issues/5).
+
+
 # Impact
-A reduction of latency due to compressed transmissions.
+A reduction of latency due to compressed transmissions. Potential increase in computational overhead.
 
 ## Evaluation Plan
 -   [The IPFS File Transfer benchmarks.](https://docs.google.com/document/d/1LYs3WDCwpkrBdfrnB_LE0xsxdMCIhXdCchIkbzZc8OE/edit#heading=h.nxkc23tlbqhl)
