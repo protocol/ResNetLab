@@ -1,6 +1,7 @@
 #  RFC|BB|L2-03A: Use of compression and adjustable block size
 * Status: `Draft`
 * Implementation here: https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL203A
+* Compression in libp2p: https://github.com/adlrocha/go-libp2p-compression-examples
 
 ## Abstract
 This RFC proposes the exploration of using compression in block transmission. These techniques go from:
