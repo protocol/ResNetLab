@@ -72,7 +72,12 @@ Some of the compression approaches to be explored in this RFC are:
 * Full message compression: In this compression strategy instead of only compressing blocks we compress every single message before sending it. It is the equivalent of compressing header+body in HTTP.
 * Stream compression: It uses compression at a stream level, so every byte that enters a stream from the node to other peers is compressed (i.e. using a compressed writer).
 
-The preliminary results show how the full message and stream compression strategies lead to the most efficient compression rates compared to the block strategy. Initial tests show an overhead by the use of compression compared to Bitswap without compression. The approach that minimizes the computational footprint is the stream compression. [See a discussion here](https://github.com/protocol/ResNetLab/issues/5).
+* To drive the compression idea even further, we prototyped a `Compression` transport into libp2p (between the `Muxer` and the `Security` layer) so that every stream running over a libp2p node can potentially benefit from the use of compression. This is a non-breaking change as the `transport-upgrader` has also been updated to enable compression negotiation (so eventually anyone can come with their own compression and embed it into libp2p seamlessly). Some repos to get started with compression in libp2p:
+     - Compression example: https://github.com/adlrocha/go-libp2p-compression-examples
+     - Gzip compressor: https://github.com/adlrocha/go-libp2p-gzip
+     - Testbed to test compression over IPFS: https://github.com/adlrocha/beyond-bitswap/tree/feat/compression
+     
+[See a discussion on the results here](https://github.com/protocol/ResNetLab/issues/5).
 
 
 # Impact
