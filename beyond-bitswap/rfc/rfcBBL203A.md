@@ -101,7 +101,7 @@ This RFC takes inspiration from:
 
 
 ## Results
-![](./images/rfcbbL103A-results.png)
+The results for the implementation of this RFC were reported here: https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/ 
 
 ## Future Work
 -   If the use of exchange requests and the negotiation phase for content transmission (RFC | BB | L1/2-01) is implemented, it makes sense that once identified a specific peer (or a group of them) as the ones storing a large number of the desired blocks, to request more advanced compression and network coding techniques for their transmission.

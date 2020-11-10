@@ -20,7 +20,7 @@ With the implementation of this RFC, IPFS nodes will:
 
 With this simple scheme we are reducing to one the RTT required to request content previously accessed by my connected peers. Additionally, if applied to GraphSync, we can have a node fetch a file in one RTT by applying the selector in the CID
 
-As a second phase  of this RFC, we intend to increase the “view” of content, connected peers can periodically share their peer-blocks registry to populate them with more CIDs and peers, even if they are not connected to them. For this scheme we need to come up with ways of limiting the level of spread of “inspection tables” (or we may end up having an alternative DHT) such that maybe I only accept updates to my “inspection tables” from nodes 2-hops away. We also need ways to collect feedback and “garbage collect” outdated information from these tables (or it may end up being useless for a large amount of the requests).
+As a second phase of this RFC, we intend to increase the “view” of content, connected peers can periodically share their peer-blocks registry to populate them with more CIDs and peers, even if they are not connected to them. For this scheme we need to come up with ways of limiting the level of spread of “inspection tables” (or we may end up having an alternative DHT) such that maybe I only accept updates to my “inspection tables” from nodes 2-hops away. We also need ways to collect feedback and “garbage collect” outdated information from these tables (or it may end up being useless for a large amount of the requests).
 
 Some of the known challenges to make this contribution efficient and effective are:
 - Peers see potentially millions of WANT messages per day. The data structure containing this information should be compacted (e.g. using an accumulator) so that the overhead storing of it is low
@@ -55,6 +55,9 @@ We can expect the time to discover content in the network to be reduced.
     - [ ] Include noise in the test case. Along with the regularly accessed files, nodes request random CIDs to pollute their registries.
     - [ ] Clear registries between run counts to remove advantage with files with similar blocks.
 - [ ] Track memory footprint of peers.
+
+## Results
+The results for the implementation of this RFC were reported here: https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/
 
 ## Future Work
 - Protocol to share peer-block registries between nodes to increase “local views”.
