@@ -57,9 +57,8 @@ to be implemented for relay sessions (like the use of a degree to limit the numb
 
 
 ### Symmetric approach message flows
-![](./images/rfcBBL102-stage1.png)
-![](./images/rfcBBL102-stage2.png)
-![](./images/rfcBBL102-stage3.png)
+![](./images/ttl_slow.gif)
+
 
 # Impact
 We should expect a latency reduction in the discovery of content but it may lead to an increase in the bandwidth overhead of the protocol. We do not expect the increase in the bandwidth overhead to be substantial, given that response messages are not big in size
