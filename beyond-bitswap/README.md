@@ -56,6 +56,8 @@ Feel free to jump into the discussions around the project or to propose your own
 * [Progress update September 2020](https://drive.google.com/file/d/1vUWnfQMIqz9hoqWB941vbzqkP16-_ydd/view?usp=sharing): Progress update of the project explaining the RFCs implemented, the testbed and some preliminary results.
 
 ### Blog Posts
+* ["Two ears, one mouth": how to leverage bitswap chatter for faster transfers](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/)
+* [Honey, I shrunk our libp2p streams ](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)
 * [Beyond Bitswap](https://adlrocha.substack.com/p/adlrocha-beyond-bitswap-i)
 * [Network Coding in P2P Networks](https://adlrocha.substack.com/p/adlrocha-network-coding-in-p2p-networks)
 * [Hash Array Mapped Tries](https://adlrocha.substack.com/p/adlrocha-hash-array-mapped-tries)
