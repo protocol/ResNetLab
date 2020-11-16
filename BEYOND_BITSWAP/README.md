@@ -37,12 +37,7 @@ We are making all our contributions, ideas, testbed, benchmarking and analysis s
 * [Enhancements RFC](#enhancements-rfcs): A list of enhancements proposals and ideas to improve file-sharing in IPFS and P2P networks.<!-- * [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project. -->
 
 ### Enhancement RFCs
-
 This section shares a list of improvement RFCs that are being currently tackled, discussed and prototyped. Each RFC aims to test a specific idea or assumption, and they may initially be implemented over Bitswap, but that doesn't mean the conclusions drawn are exclusively applicable to the Bitswap protocol. RFCs are divided in the different layers for file-sharing in P2P sytems identified in the [Related Work](https://docs.google.com/document/d/14AE8OJvSpkhguq2k1Gfc9h0JvorvLgOUSVrj3CnOkQk/edit#heading=h.nxkc23tlbqhl).
-
-If you want to familiarize with our work, we highly recommend exploring first the RFCs in `prototype` state, and then move to the ones at a `draft` or `brainstorm` state. `prototyped` RFCs are in a stage where there is working prototype you can start evaluating and playing with. The `draft` state means that the RFC is ready for implementation, while `brainstorm` RFCs require further discussions and design work.
-
-
 | RFC                                                                                                         | Status      |
 |-------------------------------------------------------------------------------------------------------------|-------------|
 | [RFC\|BB\|L0-09: Hashing algorithm improvements](./RFC/rfcBBL009)                                             | `brainstorm`|
@@ -55,6 +50,11 @@ If you want to familiarize with our work, we highly recommend exploring first th
 | [RFC\|BB\|L2-03B: Use of network coding and erasure codes](./RFC/rfcBBL203B.md)                               | `brainstorm`|
 | [RFC\|BB\|L2-07: Request minimum piece size and content protocol extension](./RFC/rfcBBL207.md)               | `brainstorm`|
 | [RFC\|BB\|L2-08: Delegate download to other nodes (bandwidth aggregation)](./RFC/rfcBBL208.md)                | `brainstorm`|
+
+
+If you want to familiarize with our work, we highly recommend exploring first the RFCs in `prototype` state, and then move to the ones at a `draft` or `brainstorm` state. `prototyped` RFCs are in a stage where there is working prototype you can start evaluating and playing with. The `draft` state means that the RFC is ready for implementation, while `brainstorm` RFCs require further discussions and design work.
+
+
 
 **Layer 0: Data Structure:**
 * [RFC|BB|L0-09: Hashing algorithm improvements](./RFC/rfcBBL009):
