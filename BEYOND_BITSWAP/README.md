@@ -45,16 +45,16 @@ If you want to familiarize with our work, we highly recommend exploring first th
 
 | RFC                                                                                                         | Status      |
 |-------------------------------------------------------------------------------------------------------------|-------------|
-| [RFC|BB|L0-09: Hashing algorithm improvements](./RFC/rfcBBL009)                                             | `brainstorm`|
-| [RFC|BB|L1-04: Track WANT messages for future queries](./RFC/rfcBBL104.md)                                  | `prototype` |
-| [RFC|BB|L1-02: TTLs for rebroadcasting WANT messages](./RFC/rfcBBL102.md)                                   | `prototype` |
-| [RFC|BB|L1-06: Content Anchors](https://github.com/protocol/ResNetLab/issues/6)                             | `brainstorm`|
-| [RFC|BB|L1/2-05: Use of super nodes and decentralized trackers](./RFC/rfcBBL1205.md)                        | `brainstorm`|
-| [RFC|BB|L12-01: Bitswap/Graphsync exchange messages extension and transmission choice](./RFC/rfcBBL1201.md) | `draft`     |
-| [RFC|BB|L2-03A: Use of compression and adjustable block size](./RFC/rfcBBL203A.md)                          | `prototype` |
-| [RFC|BB|L2-03B: Use of network coding and erasure codes](./RFC/rfcBBL203B.md)                               | `brainstorm`|
-| [RFC|BB|L2-07: Request minimum piece size and content protocol extension](./RFC/rfcBBL207.md)               | `brainstorm`|
-| [RFC|BB|L2-08: Delegate download to other nodes (bandwidth aggregation)](./RFC/rfcBBL208.md)                | `brainstorm`|
+| [RFC\|BB\|L0-09: Hashing algorithm improvements](./RFC/rfcBBL009)                                             | `brainstorm`|
+| [RFC\|BB\|L1-04: Track WANT messages for future queries](./RFC/rfcBBL104.md)                                  | `prototype` |
+| [RFC\|BB\|L1-02: TTLs for rebroadcasting WANT messages](./RFC/rfcBBL102.md)                                   | `prototype` |
+| [RFC\|BB\|L1-06: Content Anchors](https://github.com/protocol/ResNetLab/issues/6)                             | `brainstorm`|
+| [RFC\|BB\|L1/2-05: Use of super nodes and decentralized trackers](./RFC/rfcBBL1205.md)                        | `brainstorm`|
+| [RFC\|BB\|L12-01: Bitswap/Graphsync exchange messages extension and transmission choice](./RFC/rfcBBL1201.md) | `draft`     |
+| [RFC\|BB\|L2-03A: Use of compression and adjustable block size](./RFC/rfcBBL203A.md)                          | `prototype` |
+| [RFC\|BB\|L2-03B: Use of network coding and erasure codes](./RFC/rfcBBL203B.md)                               | `brainstorm`|
+| [RFC\|BB\|L2-07: Request minimum piece size and content protocol extension](./RFC/rfcBBL207.md)               | `brainstorm`|
+| [RFC\|BB\|L2-08: Delegate download to other nodes (bandwidth aggregation)](./RFC/rfcBBL208.md)                | `brainstorm`|
 
 **Layer 0: Data Structure:**
 * [RFC|BB|L0-09: Hashing algorithm improvements](./RFC/rfcBBL009):
