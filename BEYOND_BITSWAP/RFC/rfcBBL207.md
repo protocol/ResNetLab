@@ -18,13 +18,13 @@ Wanlist messages could include a "minimum piece size" parameter, specifying that
 
 We can introduce the concept of piece as an irreducible structure where underlying blocks for a piece are not assigned a CID so the piece is only identified by the root CID of the structure.
 
--   /ipfs/<CID>: Every block is identified by a CID.
+-   `/ipfs/<CID>`: Every block is identified by a CID.
 
--   /ipfs/pc/<multi_hash>: Identifies a piece. Pieces can be seen as irreducible groups of blocks. Some nodes may store some of the blocks conforming the piece, and they can be requested directly through their CID. However, if a /ipfs/pc/<multi_hash> request we are signalling that only nodes storing the full piece should send the data. For large pieces this could lead for content to become rare in the network. Fortunately, you can always resort to finding blocks one by one through /ipfs/<cid> identifier. Hence:
+-   `/ipfs/pc/<multi_hash>`: Identifies a piece. Pieces can be seen as irreducible groups of blocks. Some nodes may store some of the blocks conforming the piece, and they can be requested directly through their CID. However, if a /ipfs/pc/<multi_hash> request we are signalling that only nodes storing the full piece should send the data. For large pieces this could lead for content to become rare in the network. Fortunately, you can always resort to finding blocks one by one through /ipfs/<cid> identifier. Hence:
 
-    -   Add /ipfs/pc/ content chunks data in pieces of the specific size, and chunks these pieces in different blocks. The add request sent to the network is /ipfs/pc/<multi_hash> for every piece, indicating that all the blocks conforming a piece should be stored in the same node. Others can store sub-blocks for the piece, but add operations for pieces are performed so that all the blocks are stored as a single data unit.
+    -   Add `/ipfs/pc/` content chunks data in pieces of the specific size, and chunks these pieces in different blocks. The add request sent to the network is /ipfs/pc/<multi_hash> for every piece, indicating that all the blocks conforming a piece should be stored in the same node. Others can store sub-blocks for the piece, but add operations for pieces are performed so that all the blocks are stored as a single data unit.
 
-    -   Requesting /ipfs/pc/<multi_hash> finds full pieces before finding individual blocks pending.
+    -   Requesting `/ipfs/pc/<multi_hash>` finds full pieces before finding individual blocks pending.
 
     -   If no one has the full piece, the node needs to increase the granularity of the request and search by blocks. This adds an additional layer of abstraction for content identification and discovery.
 

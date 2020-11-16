@@ -1,5 +1,5 @@
 #  RFC|BB|L1-04: Track WANT messages for future queries
-* Status: `Draft`
+* Status: `Prototype`
 * Implementation here: https://github.com/adlrocha/go-bitswap/tree/feature/rfcBBL104
 
 ## Abstract
