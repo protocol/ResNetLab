@@ -31,12 +31,10 @@ We are making all our contributions, ideas, testbed, benchmarking and analysis s
 ### Documents
 
 * [Related Work](https://docs.google.com/document/d/14AE8OJvSpkhguq2k1Gfc9h0JvorvLgOUSVrj3CnOkQk/edit#heading=h.nxkc23tlbqhl): It gives an overview of the problem, how it will be tackled, and a collection of references and community proposals.
-* [Beyond Bitswap Slides](https://docs.google.com/presentation/d/18_aRTye2t6Xs_VhKwEbhvCYYu9ePaLgamIrJkpUDtfY/edit?usp=sharing): Set of slides introducing the project and summarizing the Related Work document from above. 
-<!-- These slides were used to introduce the project in the following [talk](???). -->
+* [Beyond Bitswap Slides](https://docs.google.com/presentation/d/18_aRTye2t6Xs_VhKwEbhvCYYu9ePaLgamIrJkpUDtfY/edit?usp=sharing): Set of slides introducing the project and summarizing the Related Work document from above. <!-- These slides were used to introduce the project in the following [talk](???). -->
 * [Survey of the state of the art](https://docs.google.com/document/d/172q0EQFPDrVrWGt5TiEj2MToTXIor4mP1gCuKv4re5I/edit?usp=sharing): It summarizes a list of papers on file-sharing strategies in P2P networks used as a groundwork for the projects.
 * [Evaluation Plan](https://docs.google.com/document/d/1LYs3WDCwpkrBdfrnB_LE0xsxdMCIhXdCchIkbzZc8OE/edit#heading=h.nxkc23tlbqhl): Document describing the testbed and evaluation plan designed to test the performane of current implementation of file-sharing systems, and compare it with the improvements implemented within the scope of this work.
-* [Enhancements RFC](#enhancements-rfcs): A list of enhancements proposals and ideas to improve file-sharing in IPFS and P2P networks.
-<!-- * [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project. -->
+* [Enhancements RFC](#enhancements-rfcs): A list of enhancements proposals and ideas to improve file-sharing in IPFS and P2P networks.<!-- * [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project. -->
 
 ### Enhancement RFCs
 
