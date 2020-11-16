@@ -22,20 +22,21 @@ Being said that, the fact that IPFS had an infrastructure in place to start test
 
 ## 💌 Invite to Research with us
 
-ResNetLab collabores with over 10 Research Groups all over the world and Protocol Labs Research has developed research collaborations in multiples of ten in the last few years. We are always eager to collaborate with more researchers in all kinds of capacity, from thesis project (M.Sc or PhD), to Post-Doc, Grants, RFPs and independent research projects.
+ResNetLab collaborates with over 10 Research Groups all over the world and Protocol Labs Research has developed research collaborations in multiples of ten in the last few years. We are always eager to collaborate with more researchers in all kinds of capacity, from thesis project (M.Sc or PhD), to Post-Doc, Grants, RFPs and independent research projects.
 
-We are making all our contributions, ideias, testbed, benchmarking and analysis scripts below. You are more than welcome to pick on these and drive one, or build on top. If you have questions, please [mail us](mailto:resnetlab@protocol.ai).
+We are making all our contributions, ideas, testbed, benchmarking and analysis scripts available below. You are more than welcome to pick any of these assets and build on top of it. If you have questions, please [mail us](mailto:resnetlab@protocol.ai).
 
 ## Contributions & Results
 
 ### Documents
 
 * [Related Work](https://docs.google.com/document/d/14AE8OJvSpkhguq2k1Gfc9h0JvorvLgOUSVrj3CnOkQk/edit#heading=h.nxkc23tlbqhl): It gives an overview of the problem, how it will be tackled, and a collection of references and community proposals.
-* [Beyond Bitswap Slides](https://docs.google.com/presentation/d/18_aRTye2t6Xs_VhKwEbhvCYYu9ePaLgamIrJkpUDtfY/edit#slide=id.p): Set of slides introducing the project and summarizing the Related Work document from above. These slides were used to introduce the project in the following [talk](???).
-* [Survey of the state of the art](https://docs.google.com/document/d/172q0EQFPDrVrWGt5TiEj2MToTXIor4mP1gCuKv4re5I/edit#heading=h.nxkc23tlbqhl): It summarizes a list of papers on file-sharing strategies in P2P networks used as a groundwork for the projects.
+* [Beyond Bitswap Slides](https://docs.google.com/presentation/d/18_aRTye2t6Xs_VhKwEbhvCYYu9ePaLgamIrJkpUDtfY/edit?usp=sharing): Set of slides introducing the project and summarizing the Related Work document from above. 
+<!-- These slides were used to introduce the project in the following [talk](???). -->
+* [Survey of the state of the art](https://docs.google.com/document/d/172q0EQFPDrVrWGt5TiEj2MToTXIor4mP1gCuKv4re5I/edit?usp=sharing): It summarizes a list of papers on file-sharing strategies in P2P networks used as a groundwork for the projects.
 * [Evaluation Plan](https://docs.google.com/document/d/1LYs3WDCwpkrBdfrnB_LE0xsxdMCIhXdCchIkbzZc8OE/edit#heading=h.nxkc23tlbqhl): Document describing the testbed and evaluation plan designed to test the performane of current implementation of file-sharing systems, and compare it with the improvements implemented within the scope of this work.
 * [Enhancements RFC](#enhancements-rfcs): A list of enhancements proposals and ideas to improve file-sharing in IPFS and P2P networks.
-* [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project.
+<!-- * [Test Results](https://docs.google.com/document/d/1zPpgnr9ykJr5PAvShJBGhKKRDRbsglb00MPc5eVEU4Q/edit#): This document collects the results of the tests performed in the scope of the project. -->
 
 ### Enhancement RFCs
 
@@ -55,17 +56,19 @@ Feel free to jump into the discussions around the project or to propose your own
 ### Code & Testbed
 
 * [Testbed, benchmarking, analysis scripts and related assets](https://github.com/protocol/beyond-bitswap/): All the code used for the implementation and other auxiliary testing assets. Additional documentation is provided in the repo.
-* [Bitswap fork](https://github.com/adlrocha/go-bitswap): This fork of `go-bitswap` is the one being used to implement and evaluate some of the RFCs and where additional metrics that want to be tracked in the testbed are being included. RFCs are imeplemented in different branches with the code of the RFC.
+* [Bitswap fork](https://github.com/adlrocha/go-bitswap): This fork of `go-bitswap` is the one being used to implement and evaluate some of the RFCs and where additional metrics that want to be tracked in the testbed are being included. RFCs are imeplemented in different branches with the name of the RFC code.
 
-### Talks
+### Talks / Videos
 
-* [Introduction to Beyond Bitswap project](??): Introductory talk to show the initial work and motivate the project.
-* [How rfcBBL104 was implemented](https://drive.google.com/file/d/1YS3RoNdeeG1vauJpfvHvKUQzPHr97eHF/view?usp=sharing): Video on how the implementation of rfcBBL104 was approached. 
+<!-- * [Introduction to Beyond Bitswap project](??): Introductory talk to show the initial work and motivate the project. -->
 * [Progress update September 2020](https://drive.google.com/file/d/1vUWnfQMIqz9hoqWB941vbzqkP16-_ydd/view?usp=sharing): Progress update of the project explaining the RFCs implemented, the testbed and some preliminary results.
+* [How rfcBBL104 was implemented](https://drive.google.com/file/d/1YS3RoNdeeG1vauJpfvHvKUQzPHr97eHF/view?usp=sharingg): Video on how the implementation of rfcBBL104 was approached. 
+* [A Deep Dive In Bitswap](https://drive.google.com/file/d/1jgTOFFtRL0UYeDk98NHoNlEuujBaK08b/view?usp=sharing): Workshop describing in detail the operation of Bitswap and the implementation of some of the improvement RFCs.
+* [Demo of compression in libp2p](https://drive.google.com/file/d/1YcemfkS5ZNnH66-tTGmerNrgrsW-bbpD/view?usp=sharing): A demo of the exchange of files between two IPFS nodes with compression enabled in libp2p.
 
 ### Publications
 * ["Two ears, one mouth": how to leverage bitswap chatter for faster transfers](https://research.protocol.ai/blog/2020/two-ears-one-mouth-how-to-leverage-bitswap-chatter-for-faster-transfers/)
-* [Honey, I shrunk our libp2p streams ](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)
+* [Honey, I shrunk our libp2p streams](https://research.protocol.ai/blog/2020/honey-i-shrunk-our-libp2p-streams/)
 * [Beyond Bitswap](https://adlrocha.substack.com/p/adlrocha-beyond-bitswap-i)
 * [Network Coding in P2P Networks](https://adlrocha.substack.com/p/adlrocha-network-coding-in-p2p-networks)
 * [Hash Array Mapped Tries](https://adlrocha.substack.com/p/adlrocha-hash-array-mapped-tries)
