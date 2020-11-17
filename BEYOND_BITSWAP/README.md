@@ -62,7 +62,7 @@ If you want to familiarize with our work, we highly recommend exploring first th
 **Layer 1 RFCs: Discovery and announcement of content:**
 * [RFC|BB|L1-04: Track WANT messages for future queries](./RFC/rfcBBL104.md): Evaluates how using information from a nodes surrounding can help the discovery and fetching of popular content in the network. 
 * [RFC|BB|L1-02: TTLs for rebroadcasting WANT messages](./RFC/rfcBBL102.md): It evaluates how broadcasting exchange requests TTL hops away, and allowing other nodes to discover and retrieve content on behalf of other peers, may help the discovery of content improving performance.
-* [RFC|BB|L1/2-05: Use of super nodes and decentralized trackers](./RFC/rfcBBL1205.md): Aknowledge the fact that P2P networks are also social networks and there are different types of nodes in the network. Explore the use of side-channel discovery mechanisms.
+* [RFC|BB|L1/2-05: Use of super nodes and decentralized trackers](./RFC/rfcBBL1205.md): Aknowledge the fact that P2P networks are also social networks and nodes in the network have different relationships and capabilities. Explore the use of side-channel discovery mechanisms.
 * [RFC|BB|L1-06: Content Anchors](https://github.com/protocol/ResNetLab/issues/6): Evaluate the use of gossipsub to perform more efficient content routing.
 
 **Layer 2 RFCs: Negotiation and transmission of content:**

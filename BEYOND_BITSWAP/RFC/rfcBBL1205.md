@@ -5,7 +5,7 @@
 
 This RFC proposes the classification of nodes in different types according to their capabilities, and the use of side-channel information to track and discover content in the network. We propose the use of decentralized trackers (with good knowledge of where content is stored in the network and a discovery service for "magnet links"), and supernodes (nodes with high bandwidth and low latency which can significantly improve the transmission of content). Thus, nodes can follow different strategies to speed-up the discovery and transmission by "looking-up" content in decentralized trackers and delegating the download of content to near supernodes.
 
-This RFC will leverage the "high-quality" infrastructure deployed by entities such as Pinata, Infura or PL. We need to acknowledge the existence of this "high-class" nodes and leverage them to improve the performance of the network.
+This RFC will leverage the "high-quality" infrastructure deployed by entities such as Pinata, Infura or PL. We need to acknowledge the existence of these "high-class" nodes and leverage them to improve the performance of the network.
 
 ### Description
 
