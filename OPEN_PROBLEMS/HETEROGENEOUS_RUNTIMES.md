@@ -121,6 +121,9 @@ Maintaining and growing libp2p protocols for the gamut of runtimes and connectio
 
 Not only protocol implementations can benefit from embedding an *"InterPlanetary Runtime* in libp2p nodes, but also any other standard computation in the ecosystem such as IPLD codecs. IPLD codecs can be implemented targeting the *IP Runtime* so they don't have to also be implemented for every libp2p implementation and runtime. This opens the door to future lines of research such as *self-describing blocks*, where the block descriptions embeds the type of data and a pointer to the codec (which can be another block in stored in the network); *content-addressable code executions*, where code snippets are stored in the network, and data is specified in the code as pointers to blocks in th network; *computation delegation*, as once every node in the network shares the same common runtime and has a way to retrieve code and data directly from the network with a standard interface, delegating the execution of code to other's is as easy as sharing a link to the code and the data.
 
+#### What defines a complete solution?
+-   TBD
+
 ### References
 - Wasmtime (Wasm runtime): <https://wasmtime.dev/>
 - UnisonWeb: Example of content-addressable programming language: <https://www.unisonweb.org/>
@@ -132,8 +135,12 @@ Not only protocol implementations can benefit from embedding an *"InterPlanetary
 ### 🛰️ (Bonus) Area VI: Space
 In the future, we may want to extend the edge computing trend into space, and follow the same approach we've followed to support libp2p for existing runtimes and link connectivities but considering the requirements and limitations of space communications. This research are may also become in the future its own open problem.
 
+#### What defines a complete solution?
+-   TBD
+
 #### References: 
 -   Libp2p for space.
+-   [[2021 Theme Proposal] IPFS ❤️ Starlink](https://github.com/ipfs/roadmap/issues/72#)
 -   SpaceX Starlink: <https://github.com/ipfs/notes/issues/432>
 -   Issue with ideas: <https://github.com/ipfs/notes/issues/432#issuecomment-639801794> 
     -   Software update among satellites
@@ -145,7 +152,7 @@ In the future, we may want to extend the edge computing trend into space, and fo
     -   Open source embedded devices coms / sat coms
 -   Efficient Telemetry Storage on IPFS: <http://blog.klaehn.org/2018/06/10/efficient-telemetry-storage-on-ipfs/>
 
-### Future areas of research
+### Additional areas of research to potentially explore.
 Other research areas and projects that may land this heterogeneous runtime open problem. Additional inspiration can be taken from [this paper](https://asc.di.fct.unl.pt/~jleitao/pdf/NewEdgeApplications.pdf).
 -   Libp2p in 5G RAN infrastructure
 -   Distributed monitoring
