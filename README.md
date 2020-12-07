@@ -63,8 +63,9 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 
   <tr>
     <th><b>Heterogeneous Runtimes</b></th>
-    <th>NEEDs OPEN PROBLEM</th>
-    <th>(e.g. Browsers, IoT, Low Powered and/or Battery powered devices)</th>
+    <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HETEROGENEOUS_RUNTIMES.md">General open problem</a></b></td>
+    <td>Making libp2p / IPFS modules and protocols the de-facto distributed substrate for connected devices in the near-future Internet. Enable the execution of libp2p nodes and its underlying protocols anywhere (any device and any runtime). Allow global connectivity between devices. Enable “offline-first” applications.
+</td>
   </tr>   
 
   <tr>
