@@ -1,28 +1,27 @@
 # Networking in Heterogeneous Runtimes
 
 ## Short Description
-Annual global IP traffic will reach 396 exabytes per month. The number of devices connected to the internet is expected to double in the same time. Access to high speed broadband connectivity is limited by poor last mile connections. Optic-fiber deployments are cost-prohibitive and slow to deploy.
+Annual global IP traffic will reach 396 exabytes per month. The number of devices connected to the internet is expected to double in the same time. Access to high speed broadband connectivity is limited by poor last mile connections. Optic-fiber deployments are cost-prohibitive and slow to deploy [1](https://www.cisco.com/c/en/us/solutions/collateral/executive-perspectives/annual-internet-report/white-paper-c11-741490.html).
 
 Edge  computing  has  emerged  as  a  distributed  computing paradigm to overcome practical scalability limits of cloud computing.  The main principle of edge computing is to leverage computational resources outside of the cloud to perform computations closer to data sources, avoiding unnecessary data transfers to the cloud and enabling faster responses for clients. Given the enormous amount of data that is expected to be produced at the edge of the network (by end-user devices), the edge-computing principle builds on the fact that “it is cheaper to bring computation to data, rather than data to computation”.
 
 Data storage and computation points at the edge of the network, be it in cell stations, WiFi access points, or even the same user devices that produce the data ultimately form a peer-to-peer network.
 
-*Both IPFS and libp2p can have a pivotal role in this new trend of distributed technologies and expansion of the Internet beyond traditional boundaries*. Both technologies already have implementations in several programming languages and are compatible for their execution in a great gamut of runtimes (desktop, browser, cloud, etc.) and network conditions (public IP addresses, behind NATs, etc.). Despite this success, there is still a lot of work to be done to make IPFS and libp2p compatible with any runtime and network condition in a way that offers a flawless experience, just like one expects when using the net or http package of any language. This open problem is built upon *the vision of making libp2p / IPFS modules and protocols the de-facto distributed substrate for connected devices in the near-future Internet*.
+*Both IPFS and libp2p can have a pivotal role in this new trend of distributed technologies and expansion of the Internet beyond traditional boundaries*. Both technologies already have implementations in several programming languages and are compatible for their execution in a great gamut of runtimes (desktop, browser, cloud, etc.) and network conditions (public IP addresses, behind NATs, etc.). Nevertheless, there is significant work to be done to make IPFS and libp2p compatible with every runtime and network condition in a way that offers a flawless experience, just like one expects when using the net or http package of any language. This open problem is built upon *the vision of making libp2p / IPFS modules and protocols the de-facto distributed substrate for connected devices in the near-future Internet*.
 
 At high-level, the aim of this research endeavor is to:
--   Enable the execution of libp2p nodes and its underlying protocols anywhere (any device and any runtime).
-    - [Are we yet?](https://wiki.mozilla.org/Areweyet)
--   Allow global connectivity between devices. Any two libp2p nodes should be able to communicate using a compatible network link available without having to rely on a stable Internet connection (direct connectivity, wireless transports, mesh connectivity, etc.). All protocol implementations should be compatible.
--   Libp2p and IPFS should be "offline-first" and enable "offline-first" applications. Temporary loss of  Internet connection shouldn't break their operation, and they should be able to seamlessly recover from unstable, intermittent network conditions (in many scenarios this is already the case).
+
+-  Enable libp2p to leverage the available protocols from the multiple runtimes, so that it can execute and form a p2p network. This will require a coordinated approach to cover as much ground possible (possible approach inspired by [Are we yet?](https://wiki.mozilla.org/Areweyet) initiatives)
+-   Allow global connectivity between devices. Any two libp2p nodes should be able to communicate using a compatible network link available without having to rely on a connection to the broad Internet (e.g direct connectivity through wireless transports, mesh connectivity, etc.). 
 -   (Bonus) Libp2p/IPFS should include a general execution framework to be easily extensible for any runtime using the same format.
--   [Extensibility through Web Assembly](https://istio.io/latest/blog/2020/wasm-announce/)
--   [Web Assembly for proxies (ABI specification)](https://github.com/proxy-wasm/spec)
--   [Self-described blocks (embedded IPLD codecs)](https://hackmd.io/AAfd9WnWQZSC7HT7Pr5G9A?view)
+  -   [Extensibility through Web Assembly](https://istio.io/latest/blog/2020/wasm-announce/)
+  -   [Web Assembly for proxies (ABI specification)](https://github.com/proxy-wasm/spec)
+  -   [Self-described blocks (embedded IPLD codecs)](https://hackmd.io/AAfd9WnWQZSC7HT7Pr5G9A?view)
 
 ## Long Description
 This open problem can be divided in the following subproblems:
 
-### 📲️ Area II: Runtimes
+### 📲️ Area I: Runtimes
 The aim of this open problem would be to have libp2p and essential IPFS modules and protocols running in different runtimes (ensuring their compatibility). A lot of work has already been done around this line with libp2p and IPFS running in the browser and implemented in several programming languages.
 
 By the end of this research effort we should consider at least supporting the following runtime categories (each category includes a list of related projects):
@@ -44,7 +43,7 @@ By the end of this research effort we should consider at least supporting the fo
 We may be able to support many of the aforementioned with the same protocol implementations (e.g. routing devices and embedded systems). This work will set a strong foundation for the rest of the projects to come.
 
 #### What defines a complete solution?
--   XXX
+- TBD
 
 #### References: 
 -   Support for libp2p intra process: <https://github.com/libp2p/libp2p/issues/61> 
@@ -132,7 +131,7 @@ Not only protocol implementations can benefit from embedding an *"InterPlanetary
 - For this project we can take inspiration from the[Wasm extensibility approach](https://istio.io/latest/blog/2020/wasm-announce/) currently introduced in Istio and Envoy. Thus, our libp2p node implementations would expose the basic operation with a common runtime framework from which new Wasm modules are instantiated and run to extend the operation of our node with additional modules and protocols.
 - Wasm bindgen designs: <https://rustwasm.github.io/docs/wasm-bindgen/contributing/design/index.html>
 
-### 🛰️ (Bonus) Area VI: Space
+### 🛰️ (Bonus) Area VI: High Latency Connection (e.g. Space)
 In the future, we may want to extend the edge computing trend into space, and follow the same approach we've followed to support libp2p for existing runtimes and link connectivities but considering the requirements and limitations of space communications. This research are may also become in the future its own open problem.
 
 #### What defines a complete solution?
