@@ -1,4 +1,4 @@
-# Heterogeneous Runtimes
+# Networking in Heterogeneous Runtimes
 
 ## Short Description
 Annual global IP traffic will reach 396 exabytes per month. The number of devices connected to the internet is expected to double in the same time. Access to high speed broadband connectivity is limited by poor last mile connections. Optic-fiber deployments are cost-prohibitive and slow to deploy.
@@ -187,4 +187,3 @@ Factories and industrial plants are an aggressive environment for wide-range wir
 Traditionally, applications are installed in the end-user devices. With mobile active networks we propose that instead of having to download an application in order to use it natively, users can just send a request to the network to run the application. The nearest devices would serve the code in the right format for the user to run the application seamlessly in his device. Instead of having to install apps, we “pin” apps. Furthermore, if the application in hand is computationally intensive, a device can delegate computations (like graphics rendering) to other capable devices in the surroundings (this is why I mentioned that the code is served in the “right format” according to the device. The code may include pointers to primitives that require the delegation of computation). This use case merges the Stadia approach (you don’t need hardware to play videogames because everything runs on the edge) with the browser (running an application means searching for an address to download the content).
 #### Business case
 Users in the edge can share their spare bandwidth/computational resources. Remove the need for expensive end-user devices to run expensive applications. Instead of storing code the device only stores user’s application-related data. This opens the door to the seamless sharing of data (in IPLD format) between different applications, and local-first applications. 
-
