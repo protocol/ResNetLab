@@ -116,7 +116,7 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 - Hydra Booster
 - Gossipsub v1.1 
 - drand
-- [Beyond Bitswap](BEYOND_BITSWAP)
+- [Beyond Bitswap](https://github.com/protocol/beyond-bitswap)
 - P2P Observatory
 
 ### RFPs
