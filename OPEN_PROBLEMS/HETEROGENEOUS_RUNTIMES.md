@@ -39,6 +39,8 @@ By the end of this research effort we should consider at least supporting the fo
 -   Trusted Execution Environments
     -   [Enarx](https://github.com/enarx/enarx/wiki/Enarx-Introduction)
     -   [T-Rust](http://t-rust.com/#/): [TEA (Trusted Execution and Attestation)](http://t-rust.org/#/doc_list/What_is_TEA%3F%2FREADME.md)
+- Risc-V architectures
+    - [go-ipfs on Risc-V](https://github.com/ipfs/go-ipfs/issues/7781). [Blog post](https://blog.davidburela.com/2020/11/16/ipfs-on-risc-v/)
 
 We may be able to support many of the aforementioned with the same protocol implementations (e.g. routing devices and embedded systems). This work will set a strong foundation for the rest of the projects to come.
 
