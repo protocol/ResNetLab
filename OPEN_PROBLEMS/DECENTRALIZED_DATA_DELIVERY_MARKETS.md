@@ -161,14 +161,14 @@ These solutions can be found in several forms:
 
 #### Optimistic Fair Exchange
 
-INSERT DESCRIPTION
+These solutions build on top of the Fair Exchange ones and adopt an Optimistic approach where some sort of Reputation or Stake is used to give both parties trust that the exchange will occur correctly. If one misbehaves, they can still rely on a dispute system.
 
-[(David) OptiSwap: Fast Optimistic Fair Exchange](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.f2mby9dpar4f)	[6](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.f2mby9dpar4f)
-[(Irene) Asynchronous Protocols for Optimistic Fair Exchange](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.6ac4zrrdyhqs)	[6](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.6ac4zrrdyhqs)
-[(Irene) Optimistic Fair Exchange with Multiple Arbiters](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.sjnrx6peoi0w)	[7](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.sjnrx6peoi0w)
+- [OptiSwap: Fast Optimistic Fair Exchange](INSERT URL)
+- [Asynchronous Protocols for Optimistic Fair Exchange](INSERT URL)
+- [Optimistic Fair Exchange with Multiple Arbiters](INSERT URL)
 
 **Known shortcomings of these approaches:**
-*   TOFILL
+*   Setup + Dispute resolution time is non insignificant and non-trivial
 
 #### Reputation based
 
