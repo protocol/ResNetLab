@@ -192,13 +192,14 @@ There are multiple solutions with the goal of delivering readers privacy and wri
 
 #### Traditional approaches (close to Web 2.0 world)
 
-INSERT DESCRIPTION
 
-[(David) The multimedia blockchain: a distributed and tamper-proof media transaction framework](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.tsv8bvhhclyh)	[10](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.tsv8bvhhclyh)
-[(Alfonso) Reliable Client Accounting for P2P-Infrastructure Hybrids](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.mnagl72zaw3u)	[11](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.mnagl72zaw3u)
+These approaches suggest novel ways to add integrity checks to data transferred or to promote new ways for content distribution, but they don’t depart from the Web 2.0 world of assumptions such as trusted third parties and central points of control.
+
+- [The multimedia blockchain: a distributed and tamper-proof media transaction framework](INSERT URL)
+- [Reliable Client Accounting for P2P-Infrastructure Hybrids](INSERT URL)
 
 **Known shortcomings of these approaches:**
-*   TOFILL
+*   Not fully aware of the challenges of building a decentralized network
 
 ### Known attacks to be mitigated
 
