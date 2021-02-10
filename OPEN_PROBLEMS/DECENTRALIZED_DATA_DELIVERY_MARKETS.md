@@ -172,15 +172,15 @@ These solutions build on top of the Fair Exchange ones and adopt an Optimistic a
 
 #### Reputation based
 
-INSERT DESCRIPTION
+Reputation based solutions give the possibility to speed up the transfer and improve the quality of the service, by leveraging the trust built over time between clients & providers.
 
-[(David) Proof of Delivery in a Trustless Network](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.g219mq8bs8ad)	[7](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.g219mq8bs8ad)
-[(David) Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.9sqsu17nv29v)	[8](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.9sqsu17nv29v)
-[(David) Mechanisms for Outsourcing Computation via a Decentralized Market](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.8lcwzhd2jj73)	[9](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.8lcwzhd2jj73)
-[(Irene) Gradual Fair Exchange Class of Constructions](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.nq0pu1otlwlb)	[10](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.nq0pu1otlwlb)
+- [(David) Proof of Delivery in a Trustless Network](INSERT URL)
+- [(David) Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](INSERT URL)
+- [(David) Mechanisms for Outsourcing Computation via a Decentralized Market](INSERT URL)
+- Other Gradual Fair Exchange Class of constructions
 
 **Known shortcomings of these approaches:**
-*   TOFILL
+*   Not a direct shortcoming, but a challenge is that each participant my have different levels of sensitivity with regards to how much they are willing to rely on trust vs. strict verifiability. 
 
 #### Privacy focused
 
