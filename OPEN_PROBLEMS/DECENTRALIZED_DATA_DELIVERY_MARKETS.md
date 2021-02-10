@@ -147,14 +147,17 @@ These type of solutions have been found/highlighted:
 
 #### Lock/Unlock access to the resource
 
-INSERT DESCRIPTION
+These type of solutions focus give the possibility for the client and the provider to verify the actual service before unlocking the payment. One of the main tools used is locking the access to the service by encrypting it with a key and then performing an exchange over the key that gives access to the service.
 
-[(David) Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.nnf8jfjvpmgc)	[4](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.nnf8jfjvpmgc)
-[(David+Alfonso) FairSwap: How to fairly exchange digital goods](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.cbnzknlpc633)	[5](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.cbnzknlpc633)
-(David) Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services	[5](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.it3yajc2rdz0)
+These solutions can be found in several forms:
+- [Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator](INSERT URL)
+- [FairSwap: How to fairly exchange digital goods](INSERT URL)
+- [Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services](INSERT URL)	
 
 **Known shortcomings of these approaches:**
-*   TOFILL
+*   Vulnerable to Grieving attacks.
+*   Generally, these solutions focus on the fulfilment of the delivery, more so than measuring the speed and rate of the transfer.
+
 
 #### Optimistic Fair Exchange
 
