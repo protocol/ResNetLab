@@ -6,7 +6,7 @@ DO NOT MERGE WITHOUT CREATING DOCTOC https://www.npmjs.com/package/doctoc
 
 ## Short description
 
-With the emergence of Decentralized Storage Networks and the rapid decrease in the price of storage services and hardware, there is a rapidly growing need to leverage the additional storage capacity contributed to Decentralized Storage Networks by several new players, such as end-users and use it to deliver a reliable and high quality storage but also delivery services. Similarly to Content Delivery Networks (CDNs) for the traditional Cloud Storage market, we now have the opportunity to build **Decentralised CDNs **for Decentralised Storage Networks. The Decentralized Data Delivery Markets (3DMs) Open Problem covers all the essential areas of work that need to be studied in order to create **a fully permissionless free market for data delivery that supports fair data exchange** on the service provided.
+With the emergence of Decentralized Storage Networks and the rapid decrease in the price of storage services and hardware, there is a rapidly growing need to leverage the additional storage capacity contributed to Decentralized Storage Networks by new players, including end-users, and use it to deliver reliable and high-quality storage and delivery services. Similarly to Content Delivery Networks (CDNs) for the traditional Cloud Storage market, we now have the opportunity to build **Decentralised CDNs** for Decentralised Storage Networks. The Decentralized Data Delivery Markets (3DMs) Open Problem covers all the essential areas of work that need to be studied in order to create **a fully permissionless free market for data delivery that supports fair data exchange** on the service provided.
 
 ## Long description 
 
