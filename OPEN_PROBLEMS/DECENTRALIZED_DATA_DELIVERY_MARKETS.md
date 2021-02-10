@@ -134,13 +134,15 @@ When it comes to the state of the art, we found that the existing solutions fall
 
 #### Pay-per-packet
 
-INSERT DESCRIPTION
+Pay-per-packet solutions offer granular control over what gets paid, enabling the option to verify if the SLA is being fulfilled. However, their setup cost and latency overhead puts them behind on being able to max out the available underlay resources.
 
-[(David) Original Filecoin payment channels](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.pc4bfmnw2ke0)	[4](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.pc4bfmnw2ke0)
-[(David) Theta Whitepaper](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.82adp2bb1rys)	[4](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.82adp2bb1rys)
+These type of solutions have been found/highlighted:
+
+- [Filecoin Retrieval Market](https://spec.filecoin.io/#section-systems.filecoin_markets.retrieval_market)
+- [Theta Whitepaper](https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-latest.pdf?v=1612955013.791)
 
 **Known shortcomings of these approaches:**
-*   TOFILL
+*   send-and-halt - Because the next packet (unit of service) will only be issued after the payment of the previous, these solutions often miss to max out the bandwidth available in the connection available, increasing the latency of delivery.
 
 
 #### Lock/Unlock access to the resource
