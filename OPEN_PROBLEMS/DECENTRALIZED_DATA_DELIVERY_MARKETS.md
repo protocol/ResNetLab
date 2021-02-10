@@ -10,11 +10,11 @@ With the emergence of Decentralized Storage Networks and the rapid decrease in t
 
 ## Long description 
 
-Serving content globally at scale is a hard technical problem as evidenced by the multiple decades of innovation and improvements in the Content Delivery Networks field. This challenge becomes even more interesting once we move away from centralized cloud infrastructures, which is typically managed and monitored by a single party, to a decentralized network that is permissionless, likely anonymous, constantly changing (i.e. high node churn) and without access to the convenience of a third party mediator system that facilitates the fair exchange of goods (e.g. credit providers). The benefits of moving to a decentralised setting are significant, however: cheaper storage and delivery services, resilience against business failures (i.e., the network and all its components are not dependent on business decisions made by a single entity), moving away from the personal data-based business models, as well as a significantly lower barrier to entry for new players who want to contribute to the system.
+Serving content globally at scale is a hard technical problem, as evidenced by the multiple decades of innovation and improvements in the Content Delivery Networks field. This challenge becomes even more interesting once we move away from centralized cloud infrastructure, which is typically managed and monitored by a single party, to a decentralized network that is permissionless, possibly anonymous, constantly changing (i.e. with high node churn) and lacking access to the convenience of a third party mediator system that facilitates the fair exchange of goods (e.g. credit providers). The benefits of moving to a decentralised setting are significant, however: cheaper storage and delivery, resilience against business failures (i.e., the network and all its components are not dependent on business decisions made by a single entity), independence from the personal data-driven business models, as well as a significantly lower barrier to entry for new players who want to contribute.
 
-At the same time, common problems addressed in the past, in traditional CDNs, reappear, albeit in a different dimension as we move to a decentralized network design space. Some of these problems are: the global orchestration of the system, the efficient allocation and use of the resources, or a clear visibility of the content being retrieved from the network.
+At the same time, problems already addressed in the past for traditional CDNs reappear, albeit in a different dimension, as we move to a decentralized network design space. These problems include the global orchestration of the system, the efficient allocation and use of the resources, and clear visibility of the content being retrieved from the network.
 
-We introduce the field of Decentralized Data Delivery Markets (3DMs) to the world as a new field of research and innovation and one that has a rapidly increasing necessity of existence.  Decentralised storage networks, such as Filecoin, have reached unprecedented storage capacity commitments (of over 2.5EB of cold storage in Jan 2021) and continue to grow rapidly. There is an urgent need to complement decentralised storage with decentralised data delivery as these storage networks are seeking for a solution to deliver the data stored in their network to their end users, while meeting the expectations that end-users are used to with the centralised services of today.
+We introduce Decentralized Data Delivery Markets (3DMs) as a new field of research and innovation and one with rapidly increasing relevance.  Decentralised storage networks, such as Filecoin, have reached unprecedented storage capacity commitments (of over 2.5EB of cold storage in Jan 2021) and continue to grow rapidly. There is an urgent need to complement decentralised storage with decentralised data delivery as these storage networks seek a solution to deliver the data stored in their network to end-users while meeting the expectations users have of the centralised services of today.
 
 We envision a 3DM as being:
 
@@ -24,20 +24,20 @@ We envision a 3DM as being:
 *   A unique set of business opportunities including:
     *   Delivering data to end users
     *   Carrying data between multiple disconnected locations or with high latency between them (Data Muling and/or Package Switching)
-    *   Create ephemeral distribution networks for large gatherings
-    *   Power the next generation of Web 3.0 applications
+    *   Creating ephemeral distribution networks for large gatherings
+    *   Powering the next generation of Web 3.0 applications
 
-This new field is ripe with unique business opportunities given the growing demand from users for access to large datasets, videos and so on, the panoply of super-powered mobile devices that end users have access to and the limitations imposed by physics in ultimately moving increasingly large data at high speeds through fiber.
+This new field is ripe with unique business opportunities given the growing demand from users for access to large datasets, videos, and other data-heavy content, the panoply of powerful mobile devices that users carry, and the limitations imposed by physics in ultimately moving increasingly large data at high speeds.
 
 In this Open Problem definition, we introduce  the multiple areas of research (or subOpenProblems), what we know so far for each one of them and link to some new ideas being explored.
 
 ### Definition of the actors
 
-For convenience and shared understanding, we define here the agents within a 3DM network. These are:
+For convenience and shared understanding, we first define the agents within a 3DM network. These are:
 
-*   **Clients** - Fetching data from Providers
-*   **Providers** - Offer the service of data delivery to clients
-*   **Content Publishers** - The creators of content (or intermediaries) that want to have content distributed. There might be situations in which Content Publishers are willing to pay for the service consumed by Clients
+*   **Clients** - Agents that fetch data from Providers.
+*   **Providers** - Agents that offer data delivery services to Clients.
+*   **Content Publishers** - Agents that create content and want to have it distributed (or intermediaries thereof). 
 
 
 ### Expected requirements
@@ -49,31 +49,30 @@ We present this list as a guide to protocol designers of what we expect a 3DM im
 *   **_The exchanges of value_** **_MUST be verifiable_** 
     *   The payment for bandwidth/latency in token should match what has been agreed and fulfilled
     *   The payment should be fulfilled if the SLA is fulfilled
-    *   Parties should be able to verify that the service provided was correct (e.g. received the right file)
+    *   Parties should be able to verify that the service provided was correct (e.g. that they received the right file)
 *   **_SHOULD be Trustless_**
-    *   Ideally, the network can perform the operations without having to leverage Trust in third parties and/or the participants of the exchange
-    *   Nevertheless, Trust can, and should, be considered as many designs might benefit from an element of Trust to increase the quality of service (e.g. reputation supports relaxing constraints)
+    *   Ideally, the network can perform the operations without having to leverage trust in third parties and/or the participants of the exchange
+    *   Nevertheless, designs might benefit from an element of trust to increase the quality of service (e.g. reputation mechanisms may allow for relaxed constraints)
 *   **_The network SHOULD do resource allocation in an efficient way_** (or as efficiently as possible)
-    *   Should not be an afterthought process
-*   **_Providers SHOULD coordinate and accept pre-fetching of content (warm up the catches)_**
+    *   Should not be an afterthought
+*   **_Providers SHOULD coordinate and accept pre-fetching of content (warm up the caches)_**
     *   This is in contrast to IPFS’s core principle of replicating only after explicit request by a peer
     *   This is done in order to make the network more efficient. However it is not mandatory with the setting being left up to the Provider.
 
 Additional expectations (i.e. bonus points):
 
 *   Data SHOULD be readily available without having to wait for the [unsealing process](https://spec.filecoin.io/#section-glossary.seal) at storage nodes (e.g. Filecoin Storage Miners).
-*   Data retrieval SHOULD be anonymous, privacy-preserving.
+*   Data retrieval SHOULD be anonymous and privacy-preserving.
 
-Other considerations (not requirements but good to think about):
+Other considerations:
 
 *   It is expected that content will always be identified and retrieved by CIDs
 *   The provider network will likely not provide random access to files, i.e., items will be named at the object level.
-*   In case there is an auction market, it should always be available (Liveness)
-    *   There needs to be a clever and fast way to match offers to bids
+*   In case there is an auction market, it should always be available and have a fast way to match offers to bids
 
 # Areas of Work
 
-Throughout the exploration of the design space, we identified 3 (+1 bonus opportunity) areas of work that need to be explored in order to make 3DMs Fair, Decentralized and Efficient. The areas are listed below.
+Throughout the exploration of the design space, we identified 3 areas of work that need to be explored in order to make 3DMs Fair, Decentralized and Efficient, as well as a bonus opportunity. The areas are listed below.
 
 ## Data Delivery Metering & Fair Exchange
 
