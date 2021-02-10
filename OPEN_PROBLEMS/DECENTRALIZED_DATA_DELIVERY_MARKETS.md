@@ -184,14 +184,11 @@ INSERT DESCRIPTION
 
 #### Privacy focused
 
-INSERT DESCRIPTION
+There are multiple solutions with the goal of delivering readers privacy and writers privacy. These incur an additional cost in setup and/or latency in favor of the additional privacy preserving benefits. Disclaimer: At the time of writing, we haven't dived as deep into these set of solutions.
 
-[(David) Blockchain based Privacy-Preserving Software Updates with Proof-of-Delivery for Internet of Things](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.3n5ydbvkkmoc)	[10](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.3n5ydbvkkmoc)
-[(David) SilentDelivery: Practical Timed-delivery of Private Information using Smart Contracts](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.2q9trcjswmyw)	[10](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.2q9trcjswmyw)
-[(David) Bulletproofs+: Shorter Proofs for Privacy-Enhanced Distributed Ledger](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.bweiezm16dvh)	[10](https://docs.google.com/document/d/1hXTP0VRmQsSFcnbxk3Z4sVmdW0CPajogJ6SXTe7zJ34/edit#heading=h.bweiezm16dvh)
-
-**Known shortcomings of these approaches:**
-*   TBD
+- [Blockchain based Privacy-Preserving Software Updates with Proof-of-Delivery for Internet of Things](INSERT URL)
+- [SilentDelivery: Practical Timed-delivery of Private Information using Smart Contracts](INSERT URL)
+- [Bulletproofs+: Shorter Proofs for Privacy-Enhanced Distributed Ledger](INSERT URL)
 
 #### Traditional approaches (close to Web 2.0 world)
 
