@@ -114,7 +114,7 @@ In review, the Metering & Fair Exchange fields end up contributing to each other
 *   Fairness
   *   Making it Trustless
     *   How to verify that the provider has the ability to delivery the file (e.g. stored locally or that can pull it from the network)
-    *   How to verify that the file being transferred is the one requested, before a large amount of resources has been invested (i.e., before the entirety of the file has been transmitted)
+    *   How to verify that the file being transferred is the one requested, before a large amount of resources has been invested (i.e. before the entirety of the file has been transmitted)
     *   How to verify that the client has received the file
   *   How to verify and reward that SLA were guaranteed?
   *   How to avoid collusion when adding a third-party (e.g. Referee)?
