@@ -147,7 +147,7 @@ These type of solutions have been found/highlighted:
 
 #### Lock/Unlock access to the resource
 
-These type of solutions focus give the possibility for the client and the provider to verify the actual service before unlocking the payment. One of the main tools used is locking the access to the service by encrypting it with a key and then performing an exchange over the key that gives access to the service.
+Solutions of this type enable the client and the provider to verify the actual service before unlocking the payment. One of the main tools used is locking the access to the service by encrypting it with a key and then performing an exchange of the key that gives access to the service.
 
 These solutions can be found in several forms:
 - [Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator](INSERT URL)
