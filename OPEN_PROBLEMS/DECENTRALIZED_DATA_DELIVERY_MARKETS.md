@@ -142,7 +142,7 @@ These type of solutions have been found/highlighted:
 - [Theta Whitepaper](https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-latest.pdf?v=1612955013.791)
 
 **Known shortcomings of these approaches:**
-*   send-and-halt - Because the next packet (unit of service) will only be issued after the payment of the previous, these solutions often miss to max out the bandwidth available in the connection available, increasing the latency of delivery.
+*   send-and-halt - Because the next packet (unit of service) will only be issued after payment for the previous is received, these solutions often fail to max out the bandwidth available in the connection, increasing the latency of delivery.
 
 
 #### Lock/Unlock access to the resource
