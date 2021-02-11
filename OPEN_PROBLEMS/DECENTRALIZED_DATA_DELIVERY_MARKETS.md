@@ -374,11 +374,11 @@ The economics of current Hybrid CDN deployments give a good understanding of the
 
 **_Related Papers:_**
 
-*   An economic mechanism for request routing and resource allocation in hybrid CDN–P2P networks
-*   An economic replica placement mechanism for streaming content distribution in Hybrid CDN-P2P networks
-*   How Neutral is a CDN? An Economic Approach
-*   Value Networks and Two-Sided Markets of Internet Content Delivery
-*   Bilateral and Multilateral Exchanges for Peer-Assisted Content Distribution
+*   [An economic mechanism for request routing and resource allocation in hybrid CDN–P2P networks](http://www.cloudbus.org/papers/CDN-P2P-NetMan.pdf)
+*   [An economic replica placement mechanism for streaming content distribution in Hybrid CDN-P2P networks](https://www.sciencedirect.com/science/article/pii/S014036641400228X?casa_token=99HEhHX4Qx4AAAAA:HGUBKkgzqtRn-AwdIpjQmxFMmUd6YIwuWH4ESn3MC1Wv1xYjI5JemUOtJlPDpI20CqFwwlYbVqM)
+*   [How Neutral is a CDN? An Economic Approach](https://files.ifi.uzh.ch/stiller/CNSM%202014/pdf/54.pdf)
+*   [Value Networks and Two-Sided Markets of Internet Content Delivery](http://www.leva.fi/wp-content/uploads/ICN_2SM_TelecomPolicy_accepted_manuscript.pdf)
+*   [Bilateral and Multilateral Exchanges for Peer-Assisted Content Distribution](https://www.cs.princeton.edu/~mfreed/docs/bilateral-tr10.pdf)
 
 **_Learnings: _**
 
@@ -391,12 +391,12 @@ How to design the right incentive and reputation models to incentivize certain b
 
 **Related Papers:**
 
-*   Scrivener: Providing Incentives in Cooperative Content Distribution Systems
-*   Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks
-*   Incentivizing Peer-Assisted Services:A Fluid Shapley Value Approach
-*   Incentive and Service Differentiation in P2P Networks: A Game Theoretic Approach
-*   On Incentivizing Caching for P2P-VoD Systems
-*   Bar Gossip
+*   [Scrivener: Providing Incentives in Cooperative Content Distribution Systems](http://cs.brown.edu/courses/csci2950-g/papers/scrivener.pdf)
+*   [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://www.ee.ucl.ac.uk/~ipsaras/files/Proof_of_Prestige-icbc19.pdf)
+*   [Incentivizing Peer-Assisted Services: A Fluid Shapley Value Approach](https://dl.acm.org/doi/pdf/10.1145/1811099.1811064)
+*   [Incentive and Service Differentiation in P2P Networks: A Game Theoretic Approach](http://www.cse.cuhk.edu.hk/~cslui/PUBLICATION/incentive_tons.pdf)
+*   [On Incentivizing Caching for P2P-VoD Systems](http://www.cse.cuhk.edu.hk/~cslui/PUBLICATION/netecon12.pdf)
+*   [Bar Gossip](https://static.usenix.org/event/osdi06/tech/full_papers/li/li.pdf)
 
 **_Learnings: _**
 
@@ -410,12 +410,12 @@ Credit networks provide liquidity in markets where transaction volumes are close
 
 **_Related Papers:_**
 
-*   Collusion-resilient Credit-based Reputations for Peer-to-peer Content Distribution
-*   Liquidity in Credit Networks: A Little Trust Goes a Long Way
-*   Liquidity in Credit Networks with Constrained Agents
-*   CAPnet: A Defense Against Cache Accounting Attacks on Content Distribution Networks
-*   MicroCash: Practical Concurrent Processing of Micropayments
-*   Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks
+*   [Collusion-resilient Credit-based Reputations for Peer-to-peer Content Distribution](https://dl.acm.org/doi/pdf/10.1145/1879082.1879085)
+*   [Liquidity in Credit Networks: A Little Trust Goes a Long Way](https://dl.acm.org/doi/pdf/10.1145/1993574.1993597)
+*   [Liquidity in Credit Networks with Constrained Agents](https://dl.acm.org/doi/pdf/10.1145/3366423.3380276)
+*   [CAPnet: A Defense Against Cache Accounting Attacks on Content Distribution Networks](https://arxiv.org/abs/1906.10272)
+*   [MicroCash: Practical Concurrent Processing of Micropayments](https://arxiv.org/pdf/1911.08520.pdf)
+*   [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://www.ee.ucl.ac.uk/~ipsaras/files/Proof_of_Prestige-icbc19.pdf)
 
 **_Learnings: _**
 
@@ -429,11 +429,11 @@ Auctions and decentralized markets have traditionally been a good way of allocat
 
 **_Related Papers:_**
 
-*   Edge-MAP: Auction Markets for Edge Resource Provisioning
-*   A Market Protocol for Decentralized Task Allocation
-*   On the Efficiency of Sharing Economy Networks
-*   Resource Allocation in Market-based Grids Using a History-based Pricing Mechanism
-*   Content Pricing in Peer-to-Peer Networks
+*   [Edge-MAP: Auction Markets for Edge Resource Provisioning](https://www.ee.ucl.ac.uk/~ipsaras/files/edgeMap-wowmom18.pdf)
+*   [A Market Protocol for Decentralized Task Allocation](https://www.computer.org/csdl/proceedings-article/icmas/1998/85000325/12OmNwlZu42)
+*   [On the Efficiency of Sharing Economy Networks](https://ieeexplore.ieee.org/document/8665937)
+*   [Resource Allocation in Market-based Grids Using a History-based Pricing Mechanism](http://ce-publications.et.tudelft.nl/publications/646_resource_allocation_in_marketbased_grids_using_a_historyba.pdf)
+*   [Content Pricing in Peer-to-Peer Networks](https://www.usenix.org/legacy/event/netecon10/tech/full_papers/Park.pdf)
 
 **_Learnings: _**
 
