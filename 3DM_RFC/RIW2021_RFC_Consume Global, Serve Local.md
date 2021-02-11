@@ -12,37 +12,37 @@ _Priority:_ <? P0, P1, P2>
 
 ### Abstract
 
-This RFC addresses the use case of heavy content distribution (ideally video) in local neighborhood environments, where the Retrieval Miner (RM) is connected to residential users. The content catalogue of a service (say Netflix or the national broadcaster) is split in chunks and stored in end-user home devices. The RM is connected to a critical mass of tens of thousands of local users and redirects requests to serve content locally.
+This RFC addresses the use case of heavy content distribution (ideally video) in local neighborhood environments, where the Provider node is connected to residential users. The content catalogue of a service (say Netflix or the national broadcaster) is split in chunks and stored in end-user home devices. The Provider is connected to a critical mass of tens of thousands of local users and redirects requests to serve content locally.
 
 ### Setup & Assumptions
 
-- Picture the environment where the ISP’s DSLAM/GPON is connected to ~20k-40k houses. Now, replace the ISP’s DSLAM/GPON with the Retrieval Miner’s (RM) gear
+- Picture the environment where the ISP’s DSLAM/GPON is connected to ~20k-40k houses. Now, replace the ISP’s DSLAM/GPON with the Provider node's gear
 - Consider a content publisher (e.g., Netflix, or local national broadcaster) who has a video content catalogue.
 - The videos are split in chunks and stored in the residential premises. This can be in user devices (laptops, desktops), wifi APs or set top boxes.
 - Depending on what user devices we consider, the connections can be quite stable, but we still consider the environment opportunistic, as users might disappear, stop serving  content, or unplug things from mains.
-- The RM would need to have random access to the content, content would need to be in small chunks so that it is served from several users and avoid saturating one user’s uplink. Erasure coding can help with collecting pieces from several peers.
+- The Provider would need to have random access to the content, content would need to be in small chunks so that it is served from several users and avoid saturating one user’s uplink. Erasure coding can help with collecting pieces from several peers.
 
 
 ### Construction
 
-1. Clients request content to their local RM by CID.
-2. The RM keeps track of which users store what content (identified by CID).
-3. The RM redirects requests to the users that store the requested CID
-4. Users return content to the client through the RM.
-5. Given that the RM sees all the content flowing through itself, it can judge whether the user’s uplink is saturated and redirect to other users (if available), or apply DASH to reduce the rate.
+1. Clients request content to their local Provider by CID.
+2. The Provider keeps track of which users store what content (identified by CID).
+3. The Provider redirects requests to the users that store the requested CID
+4. Users return content to the client through the Provider.
+5. Given that the Provider sees all the content flowing through itself, it can judge whether the user’s uplink is saturated and redirect to other users (if available), or apply DASH to reduce the rate.
     - If the users are within WiFi proximity of each other, they can connect directly.
-    - The transfer can avoid going through the overlay RM and connect directly through the ISP’s infrastructure, but in this case, the RM will not be able to monitor, adjust rate and learn about new peers that have replicated the content. It is not clear how much faster the direct connection can be.
-6. If neighbours can support the requesting user’s HD, then all good, but if not, the client connects back to the main server or higher-tier retrieval miner. This is monitored by the RM who can make the decision whether to continue streaming by the local peer, or go to a higher-tier retrieval miner.
-7. The local RM can keep local copies of very popular content.
-    - When edge node saturation reaches “critical mass”, RM no longer needs to store if kept in higher order cache (ie: Europe -> Germany -> Neighborhood/City)
-    - RM can assess rate of delivery, and then determine better options
+    - The transfer can avoid going through the overlay Provider and connect directly through the ISP’s infrastructure, but in this case, the Provider will not be able to monitor, adjust rate and learn about new peers that have replicated the content. It is not clear how much faster the direct connection can be.
+6. If neighbours can support the requesting user’s HD, then all good, but if not, the client connects back to the main server or higher-tier Provider. This is monitored by the Provider who can make the decision whether to continue streaming by the local peer, or go to a higher-tier Provider.
+7. The local Provider can keep local copies of very popular content.
+    - When edge node saturation reaches “critical mass”, the Provider node no longer needs to store if kept in higher order cache (ie: Europe -> Germany -> Neighborhood/City)
+    - The Provider can assess rate of delivery, and then determine better options
       - Ie: netflix dropping quality from 1080p to 480p for faster delivery
 
 
 
-- Both RMs and end-users serving content should be rewarded and therefore supported in the cryptoeconomic model.
-- What if peers cut the RM out of the loop?
-  - They will likely experience reduced quality, as the RM cannot monitor and adjust
+- Both Providers and end-users serving content should be rewarded and therefore supported in the cryptoeconomic model.
+- What if peers cut the Provider out of the loop?
+  - They will likely experience reduced quality, as the Provider is not able to monitor and adjust
   - [Wi-Stitch](https://dl.acm.org/doi/10.1145/3098208.3098211) paper is related.
 
 ### Pros and Cons
@@ -56,19 +56,19 @@ Pros:
 Cons:
 - Privacy issues not solved in current RFC
 - Upload bandwidth saturation needs to be avoided and a smart algorithm plus evaluation needed for that
-- Unclear where the RM should be located in the network topology
+- Unclear where the Provider node should be located in the network topology
 
 ### Implementation notes
 
 - Metering and trust model
   - We can consider a model where the original content publisher (e.g., netflix) gets notified by the application itself, when the user clicks ‘play’. This helps a lot with accounting.
-  - How about accountability and the fact that the RM or other content providers/caches can send random bits? The original publisher could provide a key to decrypt the content, or check the hash of the whole content, or some random parts of it or some combination.
+  - How about accountability and the fact that the Provider or other content publishers/caches can send random bits? The original publisher could provide a key to decrypt the content, or check the hash of the whole content, or some random parts of it or some combination.
   - QoS can be checked by the client-side media player. The above technique with “surprise checks” can also be done to check if content is delivered timely.
 
 - Connectivity and bandwidth
   - Clients connect to a provider, who has deployed a cluster of nodes and the question is how do clients get connected to their neighbours.
-    - Through the RM who is connected to everyone.
-    - Preconfiguration of local peers with the local RM.
+    - Through the Provider who is connected to everyone.
+    - Preconfiguration of local peers with the local Provider node.
   - How can app developers control the rate? How does the switchover happen, when my neighbours’ bandwidth is not enough to serve HD video requests?
 
 - Privacy
