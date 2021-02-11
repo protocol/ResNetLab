@@ -250,7 +250,7 @@ Traditionally, content is stored, hosted, replicated and delivered by centralise
 
 In a centralized setup it is much easier to optimise performance and provide guarantees, compared to the case where **every network node is operated by a separate (legal) entity that operates rationally in a profit-maximizing way**.
 
-Closer to our setup are P2P CDNs, where end-user equipment is “employed” to contribute to the storage and dissemination of content. Node churn, unreliable connectivity and low bandwidth speeds become a reality in P2P CDNs, but **again the setup of P2P CDNs is controlled and monitored by a single entity/company.** This makes decisions with regard to content placement and replication easier. The most important advantage of a single entity taking care of the P2P CDN setup is **monitoring**, that is, being able to observe the performance of peers and make decisions on where and when to replicate content or assign content distribution decisions.
+Closer to our setup are P2P CDNs, where end-user equipment is “employed” to contribute to the storage and dissemination of content. Node churn, unreliable connectivity and low bandwidth speeds become a reality in P2P CDNs, but **the operation of a P2P CDN is still largely controlled and monitored by a single entity**. This makes decisions with regard to content placement and replication easier. The most important advantage of a single entity taking care of the P2P CDN setup is **monitoring**, that is, being able to observe the performance of peers and make decisions on where and when to replicate content or assign content distribution decisions.
 
 Properties
 
