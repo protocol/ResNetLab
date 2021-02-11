@@ -19,32 +19,32 @@ This RFC targets content discovery, resolution and delivery (for closed content 
 
 Assumptions of the proposal include:
 - Users find CIDs through links in websites or apps.
-- Content publishers play the role of the tracker. They know the retrieval miner with which they have a deal with. They tell their users to go find the content there.
+- Content publishers play the role of the tracker. They know the Provider node with which they have a deal with. They tell their users to go find the content there.
 - Content publishers can outsource this operation to independent brokers. For instance, the broker for my website is the hosting company. We call content publishers brokers in the following, for simplicity.
 - The links resemble bittorrent-like magnet-links, which include the CID, the content publisher, or broker, as well as metadata. Metadata is a very central point in this proposal. What is included in the metadata is something to be defined, but could be the map of brokers storing the content, or a semantically meaningful name. Metadata should help with discovery. Metadata generally help finding seeders.
 
 The architecture consists of:
 1. end-users requesting content, 
-2. Retrieval miners (RMs) that store content
-3. Brokers that know which RM stores which content/CID
+2. Provider nodes that store content
+3. Brokers that know which Provider stores which content/CID
 4. Websites that link to content, through a CID and metadata that help with content discovery (e.g., provide a map of brokers that know about this CID)
-5. A DHT, where RMs publish provider records. The DHT is consulted by the brokers in regular time-intervals to get updated information.
+5. A DHT, where Providers publish provider records. The DHT is consulted by the brokers in regular time-intervals to get updated information.
 
 The main content retrieval operation is as follows (see also figure):
 1. Client finds “magnet link” from website (clicks)
 2. Link returns the broker’s address
 3. Client requests CID from broker
-4. Broker returns RM address (alternative: broker forwards request to RM directly)
-5. Client requests CID from RM (alternative: RM delivers content to client)
-6. RM delivers content to client
+4. Broker returns Provider's address (alternative: broker forwards request to Provider directly)
+5. Client requests CID from Provider (alternative: Provider delivers content to client)
+6. Provider delivers content to client
 
 
 
 Things that happen in the background to support the above sequence are:
-1. There is a DHT where RMs publish provider records for the content they store
+1. There is a DHT where Providers publish provider records for the content they store
 2. Brokers ask the DHT for the providers of the CIDs they’re keeping an index of in regular time intervals, but off band (i.e., not in real-time when they receive the request from clients). This ensures that they have up-to-date information and the request does not have to wait for the slow DHT walk in order to complete.
-3. In case content becomes popular at some other network/geographic area, the local RM in that area should fetch the content and let the broker know, so that he promotes them too. It is not clear how the RM that wants to replicate content will know which broker to update. A potential solution is for this information to be included in the metadata of the magnet link so that a new RM can get it from there. In this case, there is an issue when the publisher decides to change broker.
-4. The fetching of content by the new RM discussed above should be supported by the economic model: the original RM will want to satisfy all requests themselves in order to get all the profit. However, we should incentivise replication of content in order to achieve lower delivery latency.
+3. In case content becomes popular at some other network/geographic area, the local Provider in that area should fetch the content and let the broker know, so that he promotes them too. It is not clear how the Provider that wants to replicate content will know which broker to update. A potential solution is for this information to be included in the metadata of the magnet link so that a new Provider can get it from there. In this case, there is an issue when the publisher decides to change broker.
+4. The fetching of content by the new Provider discussed above should be supported by the economic model: the original Provider will want to satisfy all requests themselves in order to get all the profit. However, we should incentivise replication of content in order to achieve lower delivery latency.
 
 ### Impact
 
@@ -60,8 +60,8 @@ Pros
 
 Cons
 - The system seems to break if the content publisher decides to move their content to a different broker, since it is very difficult/impossible to update all websites, forums, or even browser bookmarks that include the magnet link. This will result in content discovery failure. A potential solution is for the user to go the slow path and ask the DHT. However, the above will not be an issue in “closed content ecosystems”, such as Spotify where you can’t consume content outside the application and the publisher has complete control over the content through the app.
-- It is not clear how the RM that wants to replicate content will know which broker to update. A potential solution is for this information to be included in the metadata of the magnet link so that a new RM can get it from there. In this case, there is an issue when the publisher decides to change broker.
-- An issue that arises is how can we update the magnet link with the list of brokers. Ex.: I don’t want to always be asking a broker very far away to let me know of RMs near me to fetch the content. How can the system assign a new broker near me to keep track of RMs near me that store the content? To my understanding this cannot happen automatically and the only way to do it is by the content publisher doing it manually.
+- It is not clear how the Provider that wants to replicate content will know which broker to update. A potential solution is for this information to be included in the metadata of the magnet link so that a new Provider can get it from there. In this case, there is an issue when the publisher decides to change broker.
+- An issue that arises is how can we update the magnet link with the list of brokers. Ex.: I don’t want to always be asking a broker very far away to let me know of Providers near me to fetch the content. How can the system assign a new broker near me to keep track of Providers near me that store the content? To my understanding this cannot happen automatically and the only way to do it is by the content publisher doing it manually.
 
 Other notes:
 - Is the scheme giving too much power to the brokers?
@@ -76,8 +76,8 @@ Other notes:
 The design can step on existing protocols within the IPFS ecosystem. For example:
 
 - The DHT structure -> libp2p DHT
-- When connecting the client to the list of RMs, the broker can use bitswap 
-- RM updates (i.e., when a new RM stores a hot copy of a content) can propagate to brokers through libp2p’s pubsub/gossipsub.
+- When connecting the client to the list of Provider nodes, the broker can use bitswap 
+- Provider updates (i.e., when a new Provider node stores a hot copy of a content) can propagate to brokers through libp2p’s pubsub/gossipsub.
 
 ### Evaluation
 
@@ -88,8 +88,8 @@ The design can step on existing protocols within the IPFS ecosystem. For example
 
 **Quantitative**
 - Taking into account connection establishment, how long does it take to resolve content and start the delivery?
-- How efficient is the proposal in finding the nearest replica in RMs closest to the client that has decided to keep a hot copy?
-- Can we integrate “Transient Retrieval Miners” (i.e., normal peers) in the scheme?
+- How efficient is the proposal in finding the nearest replica in Providers closest to the client that has decided to keep a hot copy?
+- Can we integrate “Transient Provider nodes” (i.e., normal end-user peers) in the scheme?
 
 
 ### Prior work
