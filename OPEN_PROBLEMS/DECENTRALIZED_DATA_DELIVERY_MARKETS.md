@@ -155,7 +155,7 @@ These solutions can be found in several forms:
 - [Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services](INSERT URL)	
 
 **Known shortcomings of these approaches:**
-*   Vulnerable to Grieving attacks.
+*   Vulnerable to griefing attacks.
 *   Generally, these solutions focus on the fulfilment of the delivery, more so than measuring the speed and rate of the transfer.
 
 
