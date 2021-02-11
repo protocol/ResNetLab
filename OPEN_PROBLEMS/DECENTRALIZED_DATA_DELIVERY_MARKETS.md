@@ -205,7 +205,7 @@ These approaches suggest novel ways to add integrity checks to data transferred 
 
 Here we list the attacks to consider when designing a solution. These are:
 
-*   Malicious actor forces provider to spend bandwidth without issuing payment (also known as Grieving Attack)
+*   Malicious actor forces provider to spend bandwidth without issuing payment (also known as Griefing Attack)
     *   Type: client fraud 
     *   Consequence: bandwidth-spent 
 *   Malicious actor forces provider to pull the file from storage point (e.g. Filecoin, Cloud Storage, etc), paying the cost without the provider ever getting paid 
