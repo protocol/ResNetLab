@@ -208,7 +208,7 @@ Here we list the attacks to consider when designing a solution. These are:
 *   Malicious actor forces provider to spend bandwidth without issuing payment (also known as Griefing Attack)
     *   Type: client fraud 
     *   Consequence: bandwidth is spent 
-*   Malicious actor forces provider to pull the file from storage point (e.g. Filecoin, Cloud Storage, etc), paying the cost without the provider ever getting paid 
+*   Malicious actor forces provider to pay to retrieve the file from storage point (e.g. Filecoin, Cloud Storage, etc) without the provider itself ever getting paid 
     *   Type: client fraud
     *   Consequence: currency is spent
 *   Provider claims it has sent the file, but actually never did 
