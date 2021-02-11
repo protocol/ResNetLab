@@ -16,7 +16,7 @@ The goal of the proposal discussed here is to match supply to demand peaks by de
 
 ### Construction
 
-- Two user categories: (i) users with resources but not usual retrieval miners; (ii) retrieval miners that only aim to provide short-term service driven by high/profitable demand.
+- Two user categories: (i) users with resources but not full Provider nodes; (ii) Provider nodes that only aim to provide short-term service driven by high/profitable demand.
 - A potential third user category would be plug-n-play devices, such as Raspberry Pis that run dedicated software/webapps and can provide support for local demand, when plugged in.
 - There is no mobility issue in this scenario. The main concern is how to incentivise the deployment of capacity to address specific local surges in demand (not unlike Uber surge pricing).
 - Requires some infrastructure to distribute information related to real demand (not publisher requests). Could be a gossip market of deals.
@@ -26,14 +26,14 @@ The goal of the proposal discussed here is to match supply to demand peaks by de
 - How do we price short-term needs? (out of scope of this RFC)
 - What are the steps to advertise as a provider?
 - How does someone analyse the network to determine needs?
-- How does a RM recruit, or “call-in” devices on demand? Do they listen to some channel constantly and “wake-up” when they receive some specific beacon?
+- How does a Provider recruit, or “call-in” devices on demand? Do they listen to some channel constantly and “wake-up” when they receive some specific beacon?
 - What are example applications here?
   - Are floating-content applications applicable?
   - Is message propagation in disaster-scenarios applicable?
 - Can we listen to existing CID requests?
 - Is there a way to provide advance information, pre-empt actual needs?
   - This would need to be vetted
-- This service has customers: clients and publishers. If publishers pay, it’s easy to call miners to the event.
+- This service has customers: clients and publishers. If publishers pay, it’s easy to call Providers to the event.
 
 ### Impact
 
