@@ -269,23 +269,23 @@ The target area and expected outcome of this topic is to form the network, the i
 
 **P2P CDNs:** the network architecture setup in these systems is similar in some ways to that of a 3DM
 
-*   LiveSky: Enhancing CDN with P2P
-*   P2P as a CDN: A new service model for file sharing (2012)
-*   OblivP2P: An Oblivious Peer-to-Peer Content Sharing System
+*   [LiveSky: Enhancing CDN with P2P](https://dl.acm.org/doi/pdf/10.1145/1823746.1823750)
+*   [P2P as a CDN: A new service model for file sharing](https://www.sciencedirect.com/science/article/pii/S1389128612002290?casa_token=uNw-gpbx5sIAAAAA:VYBa5QErOCS7DcduOwf1lsl3C174YlOIMmQii9NhKippX_Hm7I3QYnfeZ53LTVcp7Uj8y1JX4DI)
+*   [OblivP2P: An Oblivious Peer-to-Peer Content Sharing System](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_jia.pdf)
 
 **P2P VoD:** video delivery is an ideal target use-case, with very strict requirements; therefore, the mechanisms proposed in this field and used for P2P VoD can be inspiring
 
-*   Challenges, Design and Analysis of a Large-scale P2P-VoD System
-*   A Framework for Lazy Replication in P2P VoD
-*   InstantLeap: Fast Neighbor Discovery in P2P VoD Streaming (2008)
-*   Proactive Video Push for Optimizing Bandwidth Consumption in Hybrid CDN-P2P VoD Systems
+*   [Challenges, Design and Analysis of a Large-scale P2P-VoD System](https://dl.acm.org/doi/pdf/10.1145/1402946.1403001)
+*   [A Framework for Lazy Replication in P2P VoD](https://dl.acm.org/doi/pdf/10.1145/1496046.1496068)
+*   [InstantLeap: Fast Neighbor Discovery in P2P VoD Streaming](https://dl.acm.org/doi/pdf/10.1145/1542245.1542251)
+*   [Proactive Video Push for Optimizing Bandwidth Consumption in Hybrid CDN-P2P VoD Systems](https://ieeexplore.ieee.org/abstract/document/8485962?casa_token=41CKY7irz4kAAAAA:V2cwdpnSCny5GB2GGn0Zj1-3-BefgmpJTs0qTPZiAdzMINYIJryr7tU2L5ue8S3kVcRRdyfOtg)
 
 **Content-Centric Networking:** there are several network architectures and protocols proposed for content-/information-centric networks which can be great inspiration for a permissionless, content-addressable P2P network.
 
-*   Named Data Networking (NDN)
-*   iCDN - An NDN based CDN
-*   Analysis and Improvement of Name-based Packet Forwarding over Flat ID Network Architectures (2018)
-*   High Throughput Forwarding for ICN with Descriptors and Locators (2016)
+*   [Named Data Networking (NDN)](https://dl.acm.org/doi/pdf/10.1145/2656877.2656887)
+*   [iCDN - An NDN based CDN](https://dl.acm.org/doi/pdf/10.1145/3405656.3418716)
+*   [Analysis and Improvement of Name-based Packet Forwarding over Flat ID Network Architectures](https://dl.acm.org/doi/pdf/10.1145/3267955.3267960)
+*   [High Throughput Forwarding for ICN with Descriptors and Locators](https://dl.acm.org/doi/pdf/10.1145/2881025.2881032)
 
 Our initial, but thorough investigation resulted in the following potential groups of designs for content discovery and resolution:
 
