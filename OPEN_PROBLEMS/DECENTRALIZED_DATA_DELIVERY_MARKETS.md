@@ -478,7 +478,7 @@ This area of research and deployment is closer to traditional Delay-Tolerant Net
 
 **User Mobility**
 
-When a user is “registered” under one address/network location to serve content (at least as far as its Retrieval Miner is concerned) and then moves to another network location, the content is not possible to find anymore.
+When a user is “registered” under one address/network location to serve content (at least as far as its Retrieval Miner is concerned) and then moves to another network location, the content is not discoverable/retrievable anymore.
 
 *   Brings up content mobility issues and “content churn”
 *   Similar to node churn, this is a very tricky problem: how can you find content that was linked to some network address, when this address is not valid anymore. You can, of course, update the record if you know where the record lives, but if the record is “allowed” to be provided by anyone, then it’s difficult to even find it.
