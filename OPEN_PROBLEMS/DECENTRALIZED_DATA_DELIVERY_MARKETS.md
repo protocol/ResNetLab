@@ -298,7 +298,7 @@ DHTs are very popular constructions in P2P networks. The DHT system is used as a
 
 #### Name-based routing: 
 
-In Name-based routing systems, routing hints are integrated as part of the content name; routing tables are filled with routing hints at network setup time by a routing protocol. Routers make hop-by-hop forwarding decisions based on content names seen in requests and routing hints in their routing tables.. Matching between hints and names depend on the structure of the names, e.g., hierarchical vs flat.
+In Name-based routing systems, routing hints are integrated as part of the content name; routing tables are filled with routing hints at network setup time by a routing protocol. Routers make hop-by-hop forwarding decisions based on content names seen in requests and routing hints in their routing tables. Matching between hints and names depend on the structure of the names, e.g., hierarchical vs flat.
 
 *   **Pros:** very fast, enables multicast-like opportunities and on-path caching, which can result in significant savings in case of popular and heavy content (e.g., HD VoD). Also makes routing from browser/limited connectivity clients more feasible.
 *   **Cons:** design can be(come) complex, security properties not fully studied in the literature.
