@@ -44,7 +44,7 @@ Pros:
 Cons:
 - Privacy may become an issue
 - Limitations such as “only requested content is cached to a node’s storage” need to be lifted in order for the scheme to scale and be successful.
-- The cryptoeconomic model is challenging (but this is not new to this).
+- The cryptoeconomic model is challenging.
 - NAT traversal needs to have a solution for the scheme to be viable. A simple solution is for “recruited” devices to keep a permanent connection open with the client
 
 ### Implementation notes
