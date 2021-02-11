@@ -291,7 +291,7 @@ Our initial, but thorough investigation resulted in the following potential grou
 
 #### DHT-based: 
 
-DHTs are very popular constructions in P2P networks. The DHT system is used as a content resolution, as well as a content and peer routing system. The routing table is split between peers that participate in the DHT, providing higher resilience and scalability. In a DHT-based system, clients “walk”  the DHT (iteratively, or recursively) to find the provider record and then directly connect to the peer included in the provider record.
+DHTs are very popular constructions in P2P networks. The DHT system is used as a content resolution mechanism, as well as a content and peer routing system. The routing table is split between peers that participate in the DHT, providing higher resilience and scalability. In a DHT-based system, clients “walk” the DHT (iteratively, or recursively) to find the provider record and then directly connect to the peer included in the provider record.
 
 *   **Pros:** tested in the past, engineers have lots of experience with these structures, can become faster and less expensive than the IPFS DHT setup, if: i) re-publishing is done at coarser granularities, which is reasonable if we assume stable connectivity, i.e., low peer churn (reasonable to assume for Providers), and ii) some payment is associated with publishing. It is also reasonable to assume public IP connectivity for Providers.
 *   **Cons:** slow, several round-trips needed to resolve content (especially in case of iterative DHT lookup). The solution will not scale in the longer term.
