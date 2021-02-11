@@ -184,7 +184,7 @@ Reputation-based solutions give the possibility to speed up the transfer and imp
 
 #### Privacy focused
 
-There are multiple solutions with the goal of delivering readers privacy and writers privacy. These incur an additional cost in setup and/or latency in favor of the additional privacy preserving benefits. Disclaimer: At the time of writing, we haven't dived as deep into these set of solutions.
+There are multiple solutions with the goal of delivering reader privacy and writer privacy. These incur an additional cost in setup and/or latency. Disclaimer: At the time of writing, we haven't dived deep into this set of solutions.
 
 - [Blockchain based Privacy-Preserving Software Updates with Proof-of-Delivery for Internet of Things](INSERT URL)
 - [SilentDelivery: Practical Timed-delivery of Private Information using Smart Contracts](INSERT URL)
