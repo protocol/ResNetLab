@@ -233,7 +233,7 @@ The area of graph forming for Decentralised Data Delivery Markets revolves aroun
 *   **Content discovery & routing:** the system can forward requests to find content
 *   **Content placement:** the system should have ways to proactively distribute/replicate copies of data across different Providers in different geographic regions in order to be able to serve content fast.
 *   **Content copy selection:** the system can choose the optimal copy of the content to serve if multiple copies exist in several Providers, where potentially:
-    *   every copy has a different “asking” price (defined by the cryptoeconomic model) and latency to deliver the content item, and
+    *   every copy has a different “asking” price (defined by the cryptoeconomic model) and delivery latency, and
     *   every miner achieves different performance and has a different reputation profile.
 
 In order to achieve the above goals the system needs to have an architectural structure, that is, where do end-users connect (e.g., to a retrieval miner, or to a separate content resolution system), which entity in the architecture makes content resolution and request forwarding decisions and finally, which entity(ies) has(ve) the required knowledge to forward requests to the closest (to the requesting user) copy, _aka_ nearest replica routing.
