@@ -255,7 +255,7 @@ Closer to our setup are P2P CDNs, where end-user equipment is “employed” to 
 Properties
 
 *   The system MUST always be able to discover content and satisfy content requests
-    *   There should never be a “404 Content not Found” error.
+    *   There should never be a “404 Content not Found” error for content available anywhere on the network
 *   The system MUST replicate content to different storage points in order to reduce delivery times and maximize performance.
 *   Providers MUST follow the crypto-economic model and the system MUST make sure that Providers do not misbehave.
 *   The network MUST be a content-addressable network and operate based on content identifiers.
