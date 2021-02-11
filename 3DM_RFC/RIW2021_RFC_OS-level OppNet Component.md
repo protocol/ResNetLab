@@ -25,7 +25,7 @@ Provide a uniform opportunistic networking interface for applications to registe
   - But the OS could proactively prompt users for help distributing specific content given need and revenue opportunity
 - Use local information (e.g. calendar events with location) to decide which information to fetch and store
   - Look at upcoming locations and declared interests in said locations
-  - Leaks minimal data; does not require sharing of contact or location data by opportunistic retrieval miner
+  - Leaks minimal data; does not require sharing of contact or location data by opportunistic Provider nodes
 
 **Open Questions**
 - How do you predict what data will be desirable?
