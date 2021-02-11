@@ -323,7 +323,7 @@ In pubsub systems information propagates in the network based on topics that nod
 *   Providers serve bogus content
 *   Providers provide false provider records (i.e., they claim that they have and can serve content that they actually do not have)
 *   Cache poisoning
-*   Privacy attacks: there is a bunch of privacy-related to be taken into account 
+*   Privacy attacks: there are a number of privacy considerations and threat vectors to be taken into account 
 
 ### New ideas being explored
 
