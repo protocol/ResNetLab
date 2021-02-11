@@ -387,7 +387,7 @@ The economics of current Hybrid CDN deployments give a good understanding of the
 
 ##### Game theoretical models and reward/reputation systems in P2P networks
 
-How to design the right incentive and reputation models to incentivize certain behaviors in P2P networks has been a widely studied problem for some time now. From reputation systems where nodes track the level of good behavior of their peers and cooperate with them according to their grade; to incentive systems where good behavior is explicitly rewarded. To theoretically evaluate the strength of these schemes, they are generally mod game theoretical models are generally an objective way to evaluate the strength of these schemes, and to understand if the proposals can achieve Nash Equilibrium.
+How to design the right incentive and reputation models to incentivize certain behaviors in P2P networks has been a widely studied problem for some time now. From reputation systems where nodes track the level of good behavior of their peers and cooperate with them according to their grade; to incentive systems where good behavior is explicitly rewarded. Game-theoretical models are a way to evaluate the strength of these schemes and to understand if the proposals can achieve Nash Equilibrium.
 
 **Related Papers:**
 
