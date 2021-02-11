@@ -91,7 +91,7 @@ This trustless property is really important as we know that markets with no medi
 *   The exchanges of value MUST be verifiable and correct
     *   Fairness: 
         *   The payment MUST be fulfilled if the SLA is fulfilled
-        *   The payment for bandwidth/latency in token SHOULD match what has been agreed and fulfilled
+        *   The payment for bandwidth/latency SHOULD match what was agreed and provided
     *   Verifiability:
         *   Both parties MUST be capable of verifying that the exchange was performed correctly
         *   Bonus: Anyone SHOULD be able to verify that the exchange was performed correctly
