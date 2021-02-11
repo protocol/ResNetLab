@@ -327,7 +327,7 @@ In pubsub systems information propagates in the network based on topics that nod
 
 ### New ideas being explored
 
-ResNetLab organized a Research Intensive Workshop on 3DMs, out of it, the following ideas, structured as RFCs emerged:
+ResNetLab organized a Research Intensive Workshop on 3DMs, from which the following ideas emerged and were structured as RFCs:
 
 *   Link to RFCs TO FILL
 
