@@ -168,7 +168,7 @@ These solutions build on top of the Fair Exchange ones and adopt an Optimistic a
 - [Optimistic Fair Exchange with Multiple Arbiters](INSERT URL)
 
 **Known shortcomings of these approaches:**
-*   Setup + Dispute resolution time is non insignificant and non-trivial
+*   Setup + Dispute resolution is non-trivial and takes significant time
 
 #### Reputation based
 
