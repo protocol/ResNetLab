@@ -236,13 +236,13 @@ The area of graph forming for Decentralised Data Delivery Markets revolves aroun
     *   every copy has a different “asking” price (defined by the cryptoeconomic model) and delivery latency, and
     *   every miner achieves different performance and has a different reputation profile.
 
-In order to achieve the above goals, we need to answer certain architectural questions: where do end-users connect (e.g., to a retrieval miner, or to a separate content resolution system), which entity in the architecture makes content resolution and request forwarding decisions and finally, which entity(ies) has(ve) the required knowledge to forward requests to the closest (to the requesting user) copy, _aka_ nearest replica routing.
+In order to achieve the above goals, we need to answer certain architectural questions: where do end-users connect (e.g., to a Provider, or to a separate content resolution system), which entity in the architecture makes content resolution and request forwarding decisions and finally, which entity(ies) has(ve) the required knowledge to forward requests to the closest (to the requesting user) copy, _aka_ nearest replica routing.
 
-We generally consider that retrieval miners are relatively powerful devices with local storage dedicated to storing hot copies of the content, high uptime (close to zero churn) and, ideally, a public IP address (reachable from anywhere). The architecture should be able to take advantage of storage in less powerful and intermittently-connected end-user devices, such as laptops and mobile phones - this is discussed as a different area further down. Although not a strict requirement, this is what will make the decentralised storage network take full benefit of planetary-scale unused storage.
+We generally consider that Providers are relatively powerful devices with local storage dedicated to storing hot copies of the content, high uptime (close to zero churn) and, ideally, a public IP address (reachable from anywhere). The architecture should be able to take advantage of storage in less powerful and intermittently-connected end-user devices, such as laptops and mobile phones - this is discussed as a different area further down. Although not a strict requirement, this is what will make the decentralised storage network take full benefit of planetary-scale unused storage.
 
 It is worth highlighting that the system should be able to serve different use-cases and therefore different setups and architectures could apply depending on the use-case. For instance, the content resolution system can be different between the cases where: i) the application operates based on a closed-content ecosystem (e.g., subscriber-based music or video streaming, where control of the content is solely with the content publisher) and ii) the application operates on a totally open content space, e.g., web.
 
-Last but not least, the system of overlay retrieval miner nodes has to be permissionless and decentralised. No entity has full control of the network of nodes, as is the case with traditional CDNs, where a single entity is in charge of the network setup and the content served by the system.
+Last but not least, the system of overlay Provider nodes has to be permissionless and decentralised. No entity has full control of the network of nodes, as is the case with traditional CDNs, where a single entity is in charge of the network setup and the content served by the system.
 
 How it is done traditionally (CDNs, P2P CDNs)
 
@@ -260,7 +260,7 @@ Properties
 *   Providers MUST follow the crypto-economic model and the system MUST make sure that Providers do not misbehave.
 *   The network MUST be content-addressable and operate based on content identifiers.
 *   The system MUST be permissionless and trustless
-    *   Anyone should be free to join and set up a retrieval miner to contribute to the network.
+    *   Anyone should be free to join and set up a Provider node to contribute to the network.
 
 
 ### State-of-the-art
@@ -458,7 +458,7 @@ ResNetLab organized a Research Intensive Workshop on 3DMs, out of it, the follow
 
 An area adjacent to the Distribution Graph Forming one is that of extending the network beyond Providers, as defined earlier, to also include more ephemerally-connected, end-user devices. Such devices can include laptops, desktops, (futuristic) storage-equipped WiFi Access Points, or even mobile smartphone and tablet devices.
 
-We call these environments “opportunistic deployments” to reflect their unpredictability in terms of availability, uptime, resource quality and quantity. In contrast to RMs, as defined earlier that are expected to have stable, public and high-bandwidth connectivity, 3DM opportunistic deployments can utilise everyday user devices to extend the storage footprint of RMs and create a wealth of new network connectivity and business opportunities.
+We call these environments “opportunistic deployments” to reflect their unpredictability in terms of availability, uptime, resource quality and quantity. In contrast to Providers, as defined earlier that are expected to have stable, public and high-bandwidth connectivity, 3DM opportunistic deployments can utilise everyday user devices to extend the storage footprint of Provider nodes and create a wealth of new network connectivity and business opportunities.
 
 Although this area seems to sit on the periphery of 3DMs, it is actually a highly impactful area, as it realises the vision of Decentralised Storage Networks in general and Filecoin, in particular, of regular end-users sharing their own resources to contribute to the network. That said, we place high value in capturing this opportunity and offering to end-users the opportunity of being rewarded for their contribution to the network.
 
@@ -468,7 +468,7 @@ The literature in the field of Opportunistic and Delay-Tolerant Networks is vast
 
 #### Transient Providers
 
-We consider end-users that store content in their ephemerally connected devices (laptops, or mobile phones) and provide them to the network through (one or more) Providers, as defined in the “Distribution Graph Forming” area. These service providers are called Transient Providers (TRMs) to depict their ephemeral nature in resource availability and time. TRMs can have some economic relationship with one or more RMs, e.g., RMs can “recruit” TRMs to expand their storage capacity and footprint. In this case, RMs have to maintain their own monitoring mechanisms and do resource allocation to ensure that they are getting desirable levels of service from their group of TRMs.
+We consider end-users that store content in their ephemerally connected devices (laptops, or mobile phones) and provide them to the network through (one or more) Providers, as defined in the “Distribution Graph Forming” area. These service providers are called Transient Providers (TPs) to depict their ephemeral nature in resource availability and time. TPs can have some economic relationship with one or more Providers, e.g., Providers can “recruit” TPs to expand their storage capacity and footprint. In this case, Provider nodes have to maintain their own monitoring mechanisms and do resource allocation to ensure that they are getting desirable levels of service from their group of TPs.
 
 Opportunistic D2D
 
@@ -478,7 +478,7 @@ This area of research and deployment is closer to traditional Delay-Tolerant Net
 
 **User Mobility**
 
-When a user is “registered” under one address/network location to serve content (at least as far as its Retrieval Miner is concerned) and then moves to another network location, the content is not discoverable/retrievable anymore.
+When a user is “registered” under one address/network location to serve content (at least as far as its Provider is concerned) and then moves to another network location, the content is not discoverable/retrievable anymore.
 
 *   Brings up content mobility issues and “content churn”
 *   Similar to node churn, this is a very tricky problem: how can you find content that was linked to some network address, when this address is not valid anymore. You can, of course, update the record if you know where the record lives, but if the record is “allowed” to be provided by anyone, then it’s difficult to even find it.
