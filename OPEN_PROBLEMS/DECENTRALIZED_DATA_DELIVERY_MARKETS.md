@@ -209,7 +209,7 @@ Here we list the attacks to consider when designing a solution. These are:
     *   Type: client fraud 
     *   Consequence: bandwidth-spent 
 *   Malicious actor forces provider to pull the file from storage point (e.g. Filecoin, Cloud Storage, etc), paying the cost without the provider ever getting paid 
-    *   Type: client fraud: 
+    *   Type: client fraud
     *   Consequence: currency is spent
 *   Provider claims it has sent the file, but actually never did 
     *   Type: Provider fraud
