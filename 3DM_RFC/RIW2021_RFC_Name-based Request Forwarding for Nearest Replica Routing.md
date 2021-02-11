@@ -19,7 +19,7 @@ This RFC assumes that Retrieval Miners (RMs) act as routers for requests. It als
 ### Proposal/Construction
 
 - A retrieval miner is seen as an entity that covers some geographic area, somewhat similar to a DNS server. It is the entry point of the clients to the Filecoin network.
-  - More than one miners can serve some geographic area, either split between the miners, or in some hierarchical manner, where the initial RM is a higher-tier RM for the rest of the RMs.
+  - More than one miner can serve some geographic area, either split between the miners, or in some hierarchical manner, where the initial RM is a higher-tier RM for the rest of the RMs.
   - Example: the first RM deployed in Germany declares the prefix “/de” as their service area. Other RMs joining the system can then start serving “/de/berlin/”, “/de/munich/” etc.
 - A client should ideally be connected to more than one retrieval miner.
 - Every retrieval miner keeps a record of: i) all the content they store locally, ii) the content items they have heard about in terms of their CID, as well as iii) “where did they hear the content from” (defined similarly to a forwarding network interface of a router, binding the full name of a content to the IP address of the RM on that direction).
