@@ -172,7 +172,7 @@ These solutions build on top of the Fair Exchange ones and adopt an Optimistic a
 
 #### Reputation based
 
-Reputation based solutions give the possibility to speed up the transfer and improve the quality of the service, by leveraging the trust built over time between clients & providers.
+Reputation-based solutions give the possibility to speed up the transfer and improve the quality of the service by leveraging the trust built over time between clients & providers.
 
 - [Proof of Delivery in a Trustless Network](INSERT URL)
 - [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](INSERT URL)
