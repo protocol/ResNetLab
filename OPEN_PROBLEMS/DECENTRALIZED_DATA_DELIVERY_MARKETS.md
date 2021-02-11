@@ -228,7 +228,7 @@ ResNetLab organized a Research Intensive Workshop on 3DMs, out of which, the fol
 
 ## Distribution Graph Forming
 
-The area of graph forming for Decentralised Data Delivery Markets revolves around three main areas, which simultaneously compose the different goals of the Graph Forming problem:
+The area of graph forming for Decentralised Data Delivery Markets revolves around three main areas, which together compose the different goals of the Graph Forming problem:
 
 *   **Content discovery & routing:** the system can forward requests to find content
 *   **Content placement:** the system should have ways to proactively distribute/replicate copies of data across different Providers in different geographic regions in order to be able to serve content fast.
