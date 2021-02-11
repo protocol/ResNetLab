@@ -84,7 +84,7 @@ In traditional or Web 2.0 setups (e.g. CDNs, Mirrors, Static Servers and so on),
 
 In a decentralized environment that strives to be permissionless, we can’t expect to rely on such legal agreements and third parties and, therefore, need a way to prove fair exchange. That is, we need to be able to prove that the service was delivered correctly and the metering of the provided service was done correctly. This will, in turn, verify the exchange between the two parties and issue the correct payment (i.e. fair exchange). 
 
-This trustless property is really important as we know that markets with no mediators, escrows and other assurance services (e.g. underground markets) are prone to scams, as the users have to put a lot of trust that the provider will execute on the agreement. In a trustless environment, once the transfer is done, there is no way to contest.
+This trustless property is really important as we know that markets with no mediators, escrows, and other assurance services (e.g. underground markets) are prone to scams, as the users have to trust that the provider will execute on the agreement. In a trustless environment, once the transfer is completed, there is no way to dispute it.
 
 #### Properties desired
 
