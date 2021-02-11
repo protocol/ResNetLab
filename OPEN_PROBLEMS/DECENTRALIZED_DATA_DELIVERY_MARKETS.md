@@ -119,7 +119,7 @@ In review, the Metering & Fair Exchange fields end up contributing to each other
   *   How to verify and reward that SLA were met?
   *   How to avoid collusion when adding a third-party (e.g. Referee)?
   *   How to avoid griefing attacks (make one party pay for fees)?
-  *   How to avoid a malicious actor causing un-rewarded work, hence wasting the others’ resources?
+  *   How to avoid a malicious actor causing un-rewarded work, hence wasting others’ resources?
 *   Experience
   *   How to make the transfers start instantaneously?
   *   How to support others (e.g. Content Publishers) paying for the usage?
