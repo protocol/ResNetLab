@@ -118,7 +118,7 @@ In review, the Metering & Fair Exchange fields end up contributing to each other
     *   How to verify that the client has received the file
   *   How to verify and reward that SLA were met?
   *   How to avoid collusion when adding a third-party (e.g. Referee)?
-  *   How to avoid grieving attacks (make one party pay for fees)?
+  *   How to avoid griefing attacks (make one party pay for fees)?
   *   How to avoid a malicious actor causing un-rewarded work, hence wasting the others’ resources?
 *   Experience
   *   How to make the transfers start instantaneously?
