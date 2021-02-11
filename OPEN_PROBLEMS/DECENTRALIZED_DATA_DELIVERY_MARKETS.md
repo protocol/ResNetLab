@@ -258,7 +258,7 @@ Properties
     *   There should never be a “404 Content not Found” error for content available anywhere on the network
 *   The system MUST replicate content to different storage points in order to reduce delivery times and maximize performance.
 *   Providers MUST follow the crypto-economic model and the system MUST make sure that Providers do not misbehave.
-*   The network MUST be a content-addressable network and operate based on content identifiers.
+*   The network MUST be content-addressable and operate based on content identifiers.
 *   The system MUST be permissionless and trustless
     *   Anyone should be free to join and set up a retrieval miner to contribute to the network.
 
