@@ -468,7 +468,7 @@ The literature in the field of Opportunistic and Delay-Tolerant Networks is vast
 
 #### Transient Providers
 
-We consider end-users that store content in their ephemerally connected devices (laptops, or mobile phones) and provide them to the network through (one or more) Providers, as defined in the “Distribution Graph Forming” area. These service providers are called “Transient Providers (TRMs) to depict their ephemeral nature in resource availability and time. TRMs can have some economic relationship with one or more RMs, e.g., RMs can “recruit” TRMs to expand their storage capacity and footprint. In this case, RMs have to maintain their own monitoring mechanisms and do resource allocation to ensure that they are getting desirable levels of service from their group of TRMs.
+We consider end-users that store content in their ephemerally connected devices (laptops, or mobile phones) and provide them to the network through (one or more) Providers, as defined in the “Distribution Graph Forming” area. These service providers are called Transient Providers (TRMs) to depict their ephemeral nature in resource availability and time. TRMs can have some economic relationship with one or more RMs, e.g., RMs can “recruit” TRMs to expand their storage capacity and footprint. In this case, RMs have to maintain their own monitoring mechanisms and do resource allocation to ensure that they are getting desirable levels of service from their group of TRMs.
 
 Opportunistic D2D
 
