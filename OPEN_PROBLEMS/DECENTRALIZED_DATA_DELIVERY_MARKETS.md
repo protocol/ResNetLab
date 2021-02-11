@@ -94,7 +94,7 @@ This trustless property is really important as we know that markets with no medi
         *   The payment for bandwidth/latency SHOULD match what was agreed and provided
     *   Verifiability:
         *   Both parties MUST be capable of verifying that the exchange was performed correctly
-        *   Bonus: Anyone SHOULD be able to verify that the exchange was performed correctly
+        *   Bonus: Third parties SHOULD be able to verify that the exchange was performed correctly
 *   SHOULD be Trustless
     *   Ideally, the network can perform the operations without having to leverage Trust
     *   Nevertheless in many designs it might be needed to leverage reputation as a trust vehicle to guarantee high quality of service and/or reliability.
