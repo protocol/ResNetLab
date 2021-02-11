@@ -125,7 +125,7 @@ In review, the Metering & Fair Exchange fields end up contributing to each other
   *   How to support others (e.g. Content Publishers) paying for the usage?
   *    How to make it private (i.e. so that others don’t know which users are requesting what content)?
 *   Performance
-  *   How to overcome the send-and-halt in order to max bandwidth throughput 
+  *   How to overcome send-and-halt in order to maximize bandwidth throughput 
       *   How to support multipath (i.e. fetching from multiple sources)
 
 ### State-of-the-art
