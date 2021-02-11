@@ -12,7 +12,7 @@ _Priority:_ <? P0, P1, P2>
 
 ### Abstract
 
-This proposal assumes that retrieval miners participate in the routing of requests in the network by creating paths from client to provider (or cache). The proposal builds (or rather suggests) an economic model to enable and incentivize routing miners to autonomously (but cooperatively) find solutions to improve network routing performance. For instance, all routers that forward a request to its destination get a portion of the reward back.
+This proposal assumes that Provider nodes participate in the routing of requests in the network by creating paths from client to provider (or cache). The proposal builds (or rather suggests) an economic model to enable and incentivize Provider nodes to autonomously (but cooperatively) find solutions to improve network routing performance. For instance, all routers that forward a request to its destination get a portion of the reward back.
 
 ### Proposal/Construction
 
@@ -21,7 +21,7 @@ The core tenet of this proposal is that “if we have aligned incentives, good r
 A brief description of the construction goes as follows:
 
 - Routers keep routing information about how to route content. This is not defined in this proposal.
-- Every client wanting to retrieve content from the Filecoin network is connected to a retrieval miner or router (terms used interchangeably here). 
+- Every client wanting to retrieve content from the Filecoin network is connected to a Provider nodes or router (terms used interchangeably here). 
 - When a router receives a request it is in their best interest to forward it to the right place as they get a reward if the content transfer is successful.
   - This also incentivises them to learn and keep as much routing information as possible.
   - How routing information propagates in the network and populates the routers’ routing tables is not discussed here.
@@ -43,7 +43,7 @@ A brief description of the construction goes as follows:
   - Misbehaving is self-punishing; should be irrational to misbehave because there’s no individual advantage to gaming the metrics
   - At least assuming an honest majority. Might not work if everyone cheats.
     - Not unlike a traditional consensus problem with minimum security threshold
-    - Maybe some analogue/lessons from EIP1559? The more miners join the collusion, the better it is to be outside.
+    - Maybe some analogue/lessons from EIP1559? The more the providers that join the collusion, the better it is to be outside.
     - Could this work under an optional trust model?
     - Network voting on good vs bad list; people on the good list could skip proofs. The whole network benefits from people being in the good list, so there is no incentive to “badlist” people unnecessarily. Self-destruct switch: if someone in the good list misbehaves, no one makes money.
       - Or perhaps staking on good votes + slashing if they turn out to be bad
