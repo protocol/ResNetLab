@@ -150,9 +150,9 @@ These type of solutions have been found/highlighted:
 Solutions of this type enable the client and the provider to verify the actual service before unlocking the payment. One of the main tools used is locking the access to the service by encrypting it with a key and then performing an exchange of the key that gives access to the service.
 
 These solutions can be found in several forms:
-- [Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator](INSERT URL)
-- [FairSwap: How to fairly exchange digital goods](INSERT URL)
-- [Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services](INSERT URL)	
+- [Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator](http://anrg.usc.edu/www/papers/Dual_Deposit_ICBC_2019.pdf)
+- [FairSwap: How to fairly exchange digital goods](https://eprint.iacr.org/2018/740.pdf)
+- [Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services](https://acmccs.github.io/papers/p229-campanelliA.pdf)	
 
 **Known shortcomings of these approaches:**
 *   Vulnerable to griefing attacks.
@@ -163,9 +163,9 @@ These solutions can be found in several forms:
 
 These solutions build on top of the Fair Exchange ones and adopt an Optimistic approach where some sort of Reputation or Stake is used to give both parties trust that the exchange will occur correctly. If one misbehaves, they can still rely on a dispute system.
 
-- [OptiSwap: Fast Optimistic Fair Exchange](INSERT URL)
-- [Asynchronous Protocols for Optimistic Fair Exchange](INSERT URL)
-- [Optimistic Fair Exchange with Multiple Arbiters](INSERT URL)
+- [OptiSwap: Fast Optimistic Fair Exchange](https://dl.acm.org/doi/10.1145/3320269.3384749)
+- [Asynchronous Protocols for Optimistic Fair Exchange](https://ieeexplore.ieee.org/abstract/document/674826?casa_token=K7FXNFUKD7AAAAAA:cAcsxIQvxTqvUpRZ73PYBtG2lGtyrA0qMAEuBa46q4Zas4d3aD7yATmZhxYrhem0RxKGwlqn4g)
+- [Optimistic Fair Exchange with Multiple Arbiters](https://eprint.iacr.org/2009/069.pdf)
 
 **Known shortcomings of these approaches:**
 *   Setup + Dispute resolution is non-trivial and takes significant time
@@ -174,9 +174,9 @@ These solutions build on top of the Fair Exchange ones and adopt an Optimistic a
 
 Reputation-based solutions give the possibility to speed up the transfer and improve the quality of the service by leveraging the trust built over time between clients & providers.
 
-- [Proof of Delivery in a Trustless Network](INSERT URL)
-- [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](INSERT URL)
-- [Mechanisms for Outsourcing Computation via a Decentralized Market](INSERT URL)
+- [Proof of Delivery in a Trustless Network](https://ieeexplore.ieee.org/document/8751417)
+- [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://www.ee.ucl.ac.uk/~ipsaras/files/Proof_of_Prestige-icbc19.pdf)
+- [Mechanisms for Outsourcing Computation via a Decentralized Market](https://scopelab.ai/files/eisele2020mechanisms.pdf)
 - Other Gradual Fair Exchange Class of constructions
 
 **Known shortcomings of these approaches:**
@@ -186,17 +186,17 @@ Reputation-based solutions give the possibility to speed up the transfer and imp
 
 There are multiple solutions with the goal of delivering reader privacy and writer privacy. These incur an additional cost in setup and/or latency. Disclaimer: At the time of writing, we haven't dived deep into this set of solutions.
 
-- [Blockchain based Privacy-Preserving Software Updates with Proof-of-Delivery for Internet of Things](INSERT URL)
-- [SilentDelivery: Practical Timed-delivery of Private Information using Smart Contracts](INSERT URL)
-- [Bulletproofs+: Shorter Proofs for Privacy-Enhanced Distributed Ledger](INSERT URL)
+- [Blockchain based Privacy-Preserving Software Updates with Proof-of-Delivery for Internet of Things](https://www.sciencedirect.com/science/article/abs/pii/S074373151930098X)
+- [SilentDelivery: Practical Timed-delivery of Private Information using Smart Contracts](https://arxiv.org/abs/1912.07824)
+- [Bulletproofs+: Shorter Proofs for Privacy-Enhanced Distributed Ledger](https://eprint.iacr.org/2020/735.pdf)
 
 #### Traditional approaches (close to Web 2.0 world)
 
 
 These approaches suggest novel ways to add integrity checks to data transferred or to promote new ways for content distribution, but they don’t depart from the Web 2.0 world of assumptions such as trusted third parties and central points of control.
 
-- [The multimedia blockchain: a distributed and tamper-proof media transaction framework](INSERT URL)
-- [Reliable Client Accounting for P2P-Infrastructure Hybrids](INSERT URL)
+- [The multimedia blockchain: a distributed and tamper-proof media transaction framework](http://www.cs.stir.ac.uk/~dbh/downloads/Multimedia-Blockchain-DSP17.pdf)
+- [Reliable Client Accounting for P2P-Infrastructure Hybrids](https://www.cis.upenn.edu/~ahae/papers/accounting-nsdi2012.pdf)
 
 **Known shortcomings of these approaches:**
 *   Not fully aware of the challenges of building a decentralized network
