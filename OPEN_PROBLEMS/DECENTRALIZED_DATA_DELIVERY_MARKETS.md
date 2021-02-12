@@ -1,6 +1,53 @@
 # Decentralized Data Delivery Markets (3DMs) - Open Problem Statement
 
-DO NOT MERGE WITHOUT CREATING DOCTOC https://www.npmjs.com/package/doctoc
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Overall](#overall)
+  - [Short description](#short-description)
+  - [Long description](#long-description)
+    - [Definition of the actors](#definition-of-the-actors)
+    - [Expected requirements](#expected-requirements)
+- [Areas of Work](#areas-of-work)
+  - [Data Delivery Metering & Fair Exchange](#data-delivery-metering--fair-exchange)
+      - [How it is done traditionally](#how-it-is-done-traditionally)
+      - [Properties desired](#properties-desired)
+      - [How is Data Delivery Metering different from Fair Exchange](#how-is-data-delivery-metering-different-from-fair-exchange)
+      - [Known challenges](#known-challenges)
+    - [State-of-the-art](#state-of-the-art)
+      - [Pay-per-packet](#pay-per-packet)
+      - [Lock/Unlock access to the resource](#lockunlock-access-to-the-resource)
+      - [Optimistic Fair Exchange](#optimistic-fair-exchange)
+      - [Reputation based](#reputation-based)
+      - [Privacy focused](#privacy-focused)
+      - [Traditional approaches (close to Web 2.0 world)](#traditional-approaches-close-to-web-20-world)
+    - [Known attacks to be mitigated](#known-attacks-to-be-mitigated)
+    - [New ideas being explored](#new-ideas-being-explored)
+  - [Distribution Graph Forming](#distribution-graph-forming)
+    - [State-of-the-art](#state-of-the-art-1)
+      - [DHT-based:](#dht-based)
+      - [Name-based routing:](#name-based-routing)
+      - [DNS-style, object-level indexing service:](#dns-style-object-level-indexing-service)
+      - [PubSub-style:](#pubsub-style)
+    - [Known attacks to be mitigated](#known-attacks-to-be-mitigated-1)
+    - [New ideas being explored](#new-ideas-being-explored-1)
+  - [CryptoEconomic model for Data Delivery](#cryptoeconomic-model-for-data-delivery)
+      - [How it is done traditionally](#how-it-is-done-traditionally-1)
+      - [Properties desired](#properties-desired-1)
+    - [State-of-the-art](#state-of-the-art-2)
+        - [Economics of Hybrid CDNs and P2P networks](#economics-of-hybrid-cdns-and-p2p-networks)
+        - [Game theoretical models and reward/reputation systems in P2P networks](#game-theoretical-models-and-rewardreputation-systems-in-p2p-networks)
+        - [Credit networks and Token Designs](#credit-networks-and-token-designs)
+        - [Auctions, decentralized markets, and efficient resource allocation](#auctions-decentralized-markets-and-efficient-resource-allocation)
+    - [Known attacks to be mitigated](#known-attacks-to-be-mitigated-2)
+    - [New ideas being explored](#new-ideas-being-explored-2)
+  - [Additional: Opportunistic deployment](#additional-opportunistic-deployment)
+    - [State-of-the-art](#state-of-the-art-3)
+      - [Transient Providers](#transient-providers)
+    - [Known shortcomings](#known-shortcomings)
+    - [New ideas being explored](#new-ideas-being-explored-3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Overall
 
@@ -8,7 +55,7 @@ DO NOT MERGE WITHOUT CREATING DOCTOC https://www.npmjs.com/package/doctoc
 
 With the emergence of Decentralized Storage Networks and the rapid decrease in the price of storage services and hardware, there is a rapidly growing need to leverage the additional storage capacity contributed to Decentralized Storage Networks by new players, including end-users, and use it to deliver reliable and high-quality storage and delivery services. Similarly to Content Delivery Networks (CDNs) for the traditional Cloud Storage market, we now have the opportunity to build **Decentralised CDNs** for Decentralised Storage Networks. The Decentralized Data Delivery Markets (3DMs) Open Problem covers all the essential areas of work that need to be studied in order to create **a fully permissionless free market for data delivery that supports fair data exchange** on the service provided.
 
-## Long description 
+## Long description
 
 Serving content globally at scale is a hard technical problem, as evidenced by the multiple decades of innovation and improvements in the Content Delivery Networks field. This challenge becomes even more interesting once we move away from centralized cloud infrastructure, which is typically managed and monitored by a single party, to a decentralized network that is permissionless, possibly anonymous, constantly changing (i.e. with high node churn) and lacking access to the convenience of a third party mediator system that facilitates the fair exchange of goods (e.g. credit providers). The benefits of moving to a decentralised setting are significant, however: cheaper storage and delivery, resilience against business failures (i.e., the network and all its components are not dependent on business decisions made by a single entity), independence from the personal data-driven business models, as well as a significantly lower barrier to entry for new players who want to contribute.
 
@@ -37,8 +84,7 @@ For convenience and shared understanding, we first define the agents within a 3D
 
 *   **Clients** - Agents that fetch data from Providers.
 *   **Providers** - Agents that offer data delivery services to Clients.
-*   **Content Publishers** - Agents that create content and want to have it distributed (or intermediaries thereof). 
-
+*   **Content Publishers** - Agents that create content and want to have it distributed (or intermediaries thereof).
 
 ### Expected requirements
 
@@ -46,7 +92,7 @@ We present this list as a guide to protocol designers of what we expect a 3DM im
 
 *   **_MUST be Decentralized and not just federated_**
     *   Anyone should be able to join and leave at any time, without requiring permission
-*   **_The exchanges of value_** **_MUST be verifiable_** 
+*   **_The exchanges of value_** **_MUST be verifiable_**
     *   The payment for bandwidth/latency in token should match what has been agreed and fulfilled
     *   The payment should be fulfilled if the SLA is fulfilled
     *   Parties should be able to verify that the service provided was correct (e.g. that they received the right file)
@@ -78,18 +124,18 @@ Throughout the exploration of the design space, we identified 3 areas of work th
 
 We believe that this area of work is where the main crux for Decentralized Data Delivery Markets come to reality. Without it (i.e. without relying on a verified mediator to serve as escrow and referee), it will be impossible to have a fully permissionless, decentralized and open market for data delivery.
 
-#### How it is done traditionally 
+#### How it is done traditionally
 
-In traditional or Web 2.0 setups (e.g. CDNs, Mirrors, Static Servers and so on), the correct metering happens on the server and is handled by the provider, which the clients trust to perform correct measurements. This measurement translates into a statement of how much the service was, ultimately resulting in an invoice and request for payment. This payment is facilitated by a trusted third party (e.g. credit card company) and a legal contract that can be used to resolve disputes in case the client fails to pay to the provider and/or the provider fails to deliver the service promised to the client. 
+In traditional or Web 2.0 setups (e.g. CDNs, Mirrors, Static Servers and so on), the correct metering happens on the server and is handled by the provider, which the clients trust to perform correct measurements. This measurement translates into a statement of how much the service was, ultimately resulting in an invoice and request for payment. This payment is facilitated by a trusted third party (e.g. credit card company) and a legal contract that can be used to resolve disputes in case the client fails to pay to the provider and/or the provider fails to deliver the service promised to the client.
 
-In a decentralized environment that strives to be permissionless, we can’t expect to rely on such legal agreements and third parties and, therefore, need a way to prove fair exchange. That is, we need to be able to prove that the service was delivered correctly and the metering of the provided service was done correctly. This will, in turn, verify the exchange between the two parties and issue the correct payment (i.e. fair exchange). 
+In a decentralized environment that strives to be permissionless, we can’t expect to rely on such legal agreements and third parties and, therefore, need a way to prove fair exchange. That is, we need to be able to prove that the service was delivered correctly and the metering of the provided service was done correctly. This will, in turn, verify the exchange between the two parties and issue the correct payment (i.e. fair exchange).
 
 This trustless property is really important as we know that markets with no mediators, escrows, and other assurance services (e.g. underground markets) are prone to scams, as the users have to trust that the provider will execute on the agreement. In a trustless environment, once the transfer is completed, there is no way to dispute it.
 
 #### Properties desired
 
 *   The exchanges of value MUST be verifiable and correct
-    *   Fairness: 
+    *   Fairness:
         *   The payment MUST be fulfilled if the SLA is fulfilled
         *   The payment for bandwidth/latency SHOULD match what was agreed and provided
     *   Verifiability:
@@ -107,7 +153,7 @@ The field of Fair Exchange overlaps in part with Service Metering. Some notable 
 *   Fair Exchange is traditionally between 2 parties
 *   Metering should be available to properly measure the service quality and service provided by one or more parties (e.g. streaming from multiple endpoints)
 
-In review, the Metering & Fair Exchange fields end up contributing to each other and it is likely that the intersection of both is needed for a sound solution. 
+In review, the Metering & Fair Exchange fields end up contributing to each other and it is likely that the intersection of both is needed for a sound solution.
 
 #### Known challenges
 
@@ -125,7 +171,7 @@ In review, the Metering & Fair Exchange fields end up contributing to each other
   *   How to support others (e.g. Content Publishers) paying for the usage?
   *    How to make it private (i.e. so that others don’t know which users are requesting what content)?
 *   Performance
-  *   How to overcome send-and-halt in order to maximize bandwidth throughput 
+  *   How to overcome send-and-halt in order to maximize bandwidth throughput
       *   How to support multipath (i.e. fetching from multiple sources)
 
 ### State-of-the-art
@@ -152,12 +198,11 @@ Solutions of this type enable the client and the provider to verify the actual s
 These solutions can be found in several forms:
 - [Solving the Buyer and Seller’s Dilemma: A Dual-Deposit Escrow Smart Contract for Provably Cheat-Proof Delivery and Payment for a Digital Good without a Trusted Mediator](http://anrg.usc.edu/www/papers/Dual_Deposit_ICBC_2019.pdf)
 - [FairSwap: How to fairly exchange digital goods](https://eprint.iacr.org/2018/740.pdf)
-- [Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services](https://acmccs.github.io/papers/p229-campanelliA.pdf)	
+- [Zero-Knowledge Contingent Payments Revisited: Attacks and Payments for Services](https://acmccs.github.io/papers/p229-campanelliA.pdf)
 
 **Known shortcomings of these approaches:**
 *   Vulnerable to griefing attacks.
 *   Generally, these solutions focus on the fulfilment of the delivery, more so than measuring the speed and rate of the transfer.
-
 
 #### Optimistic Fair Exchange
 
@@ -180,7 +225,7 @@ Reputation-based solutions give the possibility to speed up the transfer and imp
 - Other Gradual Fair Exchange Class of constructions
 
 **Known shortcomings of these approaches:**
-*   Not a direct shortcoming, but a challenge is that each participant my have different levels of sensitivity with regards to how much they are willing to rely on trust vs. strict verifiability. 
+*   Not a direct shortcoming, but a challenge is that each participant my have different levels of sensitivity with regards to how much they are willing to rely on trust vs. strict verifiability.
 
 #### Privacy focused
 
@@ -206,18 +251,18 @@ These approaches suggest novel ways to add integrity checks to data transferred 
 Here we list the attacks to consider when designing a solution. These are:
 
 *   Malicious actor forces provider to spend bandwidth without issuing payment (also known as Griefing Attack)
-    *   Type: client fraud 
-    *   Consequence: bandwidth is spent 
-*   Malicious actor forces provider to pay to retrieve the file from storage point (e.g. Filecoin, Cloud Storage, etc) without the provider itself ever getting paid 
+    *   Type: client fraud
+    *   Consequence: bandwidth is spent
+*   Malicious actor forces provider to pay to retrieve the file from storage point (e.g. Filecoin, Cloud Storage, etc) without the provider itself ever getting paid
     *   Type: client fraud
     *   Consequence: currency is spent
-*   Provider claims it has sent the file, but actually never did 
+*   Provider claims it has sent the file, but actually never did
     *   Type: Provider fraud
     *   Consequence: Client gets penalized without receiving the service
-*   Metering Inflation 
+*   Metering Inflation
     *   Providers report to have used more resources to serve content to clients than what they have actually done.
 *   Sybil / Throttle attacks
-    *   Description: A set of nodes collude against a content-provider to try and make him go bankrupt (loss of all its “SLA stake”). They all try to download content from that content provider at the same time, so that Providers start consuming the stake from the content providers. If clients are not paying for the service we take the risk of enabling this attack. 
+    *   Description: A set of nodes collude against a content-provider to try and make him go bankrupt (loss of all its “SLA stake”). They all try to download content from that content provider at the same time, so that Providers start consuming the stake from the content providers. If clients are not paying for the service we take the risk of enabling this attack.
 
 ### New ideas being explored
 
@@ -289,14 +334,14 @@ The target area and expected outcome of this topic is to form the network, the i
 
 Our initial, but thorough investigation resulted in the following potential groups of designs for content discovery and resolution:
 
-#### DHT-based: 
+#### DHT-based:
 
 DHTs are very popular constructions in P2P networks. The DHT system is used as a content resolution mechanism, as well as a content and peer routing system. The routing table is split between peers that participate in the DHT, providing higher resilience and scalability. In a DHT-based system, clients “walk” the DHT (iteratively, or recursively) to find the provider record and then directly connect to the peer included in the provider record.
 
 *   **Pros:** tested in the past, engineers have lots of experience with these structures, can become faster and less expensive than the IPFS DHT setup, if: i) re-publishing is done at coarser granularities, which is reasonable if we assume stable connectivity, i.e., low peer churn (reasonable to assume for Providers), and ii) some payment is associated with publishing. It is also reasonable to assume public IP connectivity for Providers.
 *   **Cons:** slow, several round-trips needed to resolve content (especially in case of iterative DHT lookup). The solution will not scale in the longer term.
 
-#### Name-based routing: 
+#### Name-based routing:
 
 In Name-based routing systems, routing hints are integrated as part of the content name; routing tables are filled with routing hints at network setup time by a routing protocol. Routers make hop-by-hop forwarding decisions based on content names seen in requests and routing hints in their routing tables. Matching between hints and names depend on the structure of the names, e.g., hierarchical vs flat.
 
@@ -323,7 +368,7 @@ In pubsub systems information propagates in the network based on topics that nod
 *   Providers serve bogus content
 *   Providers provide false provider records (i.e., they claim that they have and can serve content that they actually do not have)
 *   Cache poisoning
-*   Privacy attacks: there are a number of privacy considerations and threat vectors to be taken into account 
+*   Privacy attacks: there are a number of privacy considerations and threat vectors to be taken into account
 
 ### New ideas being explored
 
@@ -335,7 +380,7 @@ ResNetLab organized a Research Intensive Workshop on 3DMs, from which the follow
 
 The aim of the cryptoeconomic model is to build an incentive system to ensure that all actors in the network are aligned towards the same goal: to deliver data efficiently. The cryptoeconomic model is tightly coupled to all of the areas presented above, offering a way to incentivize desired behaviors in the network.  Ideally, the economic model should offer the substrate to build a decentralized and trustless infrastructure for data delivery able to compete against traditional CDN infrastructures in terms of cost, scalability, and price.
 
-#### How it is done traditionally 
+#### How it is done traditionally
 
 In traditional and centralized setups, a set of legal agreements is used to govern the relationships between entities, align the incentives of all participants, and discourage disruptive behaviour. These agreements offer a basic level of trust to ensure good behavior by all entities in the system (clearly stating the SLA, and punishments for misbehaving or not fulfilling the contract). We currently see this setup in the multilateral agreements between CDNs, ISPs, and Cloud Providers to share resources from their infrastructures for a certain price in order to build a network of relationships that allow them to provide their content delivery services efficiently.
 
@@ -359,7 +404,7 @@ Finally, auction markets and game theoretical models have been traditionally use
     *   Or the other way around, good behaving entities should be rewarded by the model.
     *   In its different layers, the system will include schemes to prevent attacks in the network (client metering, sybil attacks, data-ransoming, etc.). However, this economic model should disincentivize these kinds of misbehavior in advance (from a game theoretical approach, the system should target a Nash Equilibrium in the system where misbehaviors are disincentivized).
     *   It should also avoid “malicious economic attacks” such as a content provider trying to bankrupt its competition by draining the stake of his retrieval deal.
-*   The model SHOULD foster collaboration between entities to benefit users perceived QoS / QoE. 
+*   The model SHOULD foster collaboration between entities to benefit users perceived QoS / QoE.
     *   The model should reward entities that collaborate to serve content efficiently and with high QoS to users.
     *   This will also result in an efficient allocation of resources in the network.
 *   If any part of the economics of the system ends up being orchestrated by an auction market, this market MUST be always available.
@@ -407,7 +452,7 @@ How to design the right incentive and reputation models to incentivize certain b
 
 ##### Credit networks and Token Designs
 
-Credit networks provide liquidity in markets where transaction volumes are close to balanced in both directions. They offer a way of performing payments and rewarding behaviors without the need of a common consensus or dedicated agreements between all the entities in the systems. Credit networks require no “a priori” trust relationships when they are backed by on-chain escrows, so they represent an interesting approach to tackle the economics of 3DMs. 
+Credit networks provide liquidity in markets where transaction volumes are close to balanced in both directions. They offer a way of performing payments and rewarding behaviors without the need of a common consensus or dedicated agreements between all the entities in the systems. Credit networks require no “a priori” trust relationships when they are backed by on-chain escrows, so they represent an interesting approach to tackle the economics of 3DMs.
 
 **_Related Papers:_**
 
@@ -421,7 +466,7 @@ Credit networks provide liquidity in markets where transaction volumes are close
 **_Learnings: _**
 
 *   Economics of credit networks.
-*   Using credit networks for fast payments and reputation systems. 
+*   Using credit networks for fast payments and reputation systems.
 *   Credit networks for content distribution in P2P networks.
 
 ##### Auctions, decentralized markets, and efficient resource allocation
@@ -445,7 +490,7 @@ Auctions and decentralized markets have traditionally been a good way of allocat
 ### Known attacks to be mitigated
 
 *   **Sybil attacks:** Actors trying to game the system by indiscriminately generating a large amount of entities and gaining large influence over the system (forging client retrievals, overestimating the use of resources of a provider, preventing access from some resource in the network, making actors in the system dedicate resources to useless work, etc.).
-*   **Collusion attacks:** Several independent actors in the system colluding to perform attacks in order to gain large influence in the network. The type of attacks that can be performed with a collusion attack are similar to the ones performed in a sybil attack, but without having to generate “pseudonymous identities”. 
+*   **Collusion attacks:** Several independent actors in the system colluding to perform attacks in order to gain large influence in the network. The type of attacks that can be performed with a collusion attack are similar to the ones performed in a sybil attack, but without having to generate “pseudonymous identities”.
 *   **Data ransoming:** This attack takes place when a provider agrees to serve some data from a publisher, but ends up preventing its retrieval from clients until a ransom is paid. An alternative form of this attack occurs when a provider is serving chunks of content to a client, and doesn’t deliver the last couple of chunks until it pays a ransom.
 *   **Malicious economic attacks:** Attacks aimed at economically harming actors in the systems. For instance, clients trying to get a provider or content publisher bankrupt, providers offering abusive prices to content publishers, providers and clients colluding to avoid the economic rewards of target entities, etc.
 
@@ -473,9 +518,9 @@ We consider end-users that store content in their ephemerally connected devices 
 
 Opportunistic D2D
 
-This area of research and deployment is closer to traditional Delay-Tolerant Networks (DTNs). We envision applications where mobile devices contribute to the distribution of content in the mobile domain. These can be akin to previously proposed [User-Operated Mobile Content Distribution Networks](https://drive.google.com/file/d/1vvtQ7MJb4YFRXxeo2GewGh8EVYEqV-iJ/view?usp=sharing), or applications to realise concepts such as “[Floating Content](https://drive.google.com/file/d/1yOniHbAjLYv3q09pff7gnulOwT_NYCYG/view?usp=sharing)”. 
+This area of research and deployment is closer to traditional Delay-Tolerant Networks (DTNs). We envision applications where mobile devices contribute to the distribution of content in the mobile domain. These can be akin to previously proposed [User-Operated Mobile Content Distribution Networks](https://drive.google.com/file/d/1vvtQ7MJb4YFRXxeo2GewGh8EVYEqV-iJ/view?usp=sharing), or applications to realise concepts such as “[Floating Content](https://drive.google.com/file/d/1yOniHbAjLYv3q09pff7gnulOwT_NYCYG/view?usp=sharing)”.
 
-### Known shortcomings 
+### Known shortcomings
 
 **User Mobility**
 
