@@ -15,8 +15,8 @@
   - [Motivation & Description](#motivation--description)
 - [Research](#research)
   - [Areas](#research)
-  - [Projects](#research)  
-  - [Collaborations](#collaborations)    
+  - [Projects](#research)
+  - [Collaborations](#collaborations)
 - [Collab projects tracking threads](#collab-projects-tracking-threads)
 - [Publications, Talks & Trainings](#publications-talks--trainings)
 - [Team](#team)
@@ -48,31 +48,37 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
     <th><b>Open Problem(s)</b></th>
     <th><b>Short Description</b></th>
   </tr>
-   
-  <tr>
-    <th><b>Networks Observability</b></th>
-    <th>NEEDs OPEN PROBLEM</th>
-    <th></th>
-  </tr>   
 
   <tr>
     <th><b>Resilliency in Adversarial Networks</b></th>
     <th>NEEDs OPEN PROBLEM</th>
     <th></th>
-  </tr>   
+  </tr>
+
+  <tr>
+    <th><b>Networks Observability</b></th>
+    <th>NEEDs OPEN PROBLEM</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <th><b>Decentralized Data Delivery Markets</b></th>
+    <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/DECENTRALIZED_DATA_DELIVERY_MARKETS.md">General open problem</a></b></td>
+    <th></th>
+  </tr>
 
   <tr>
     <th><b>Heterogeneous Runtimes</b></th>
     <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HETEROGENEOUS_RUNTIMES.md">General open problem</a></b></td>
     <td>Making libp2p / IPFS modules and protocols the de-facto distributed substrate for connected devices in the near-future Internet. Enable the execution of libp2p nodes and its underlying protocols anywhere (any device and any runtime). Allow global connectivity between devices. Enable “offline-first” applications.
 </td>
-  </tr>   
+  </tr>
 
   <tr>
     <th><b>Content Addressing</b></th>
     <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ROUTING_AT_SCALE.md">Routing at Scale (1M, 10M, 100M, 1B.. nodes)</a></b></td>
     <td>Content-addressable networks face the challenge of routing scalability, as the amount of addressable elements in the network rises by several orders of magnitude compared to the host-addressable Internet of today.</td>
-  </tr>  
+  </tr>
 
   <tr>
     <th></th>
@@ -84,37 +90,37 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
     <th><b>Mutability</b></th>
     <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/MUTABLE_DATA.md">Mutable Data (Naming, Real-Time, Guarantees)</a></b></td>
     <td>Enabling a multitude of different patterns of interactions between users, machines and both. In other words, what are the essential primitives that must be provided for dynamic applications to exist, what are the guarantees they require (consistency, availability, persistancy, authenticity, etc) from the underlying layer in order create powerful and complete applications in the Distributed Web.</td>
-  </tr>  
-  
+  </tr>
+
   <tr>
     <th></th>
     <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/HUMAN_READABLE_NAMING.md">Human Readable Naming</a></b></td>
     <td>You can only have two of three properties for a name: Human-meaningful, Secure and/or Decentralized. This is Zooko's Trilemma. Can we have all 3, or even more? Can context related to some data help solve this problem?</td>
-  </tr>    
+  </tr>
 
   <tr>
     <th></th>
     <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PUBSUB_AT_SCALE.md">PubSub at Scale (1M, 10M, 100M, 1B.. nodes)</a></b></td>
     <td>As the IPFS system is evolving and growing, communicating new entries to the IPNS is becoming an issue due to the increased network and node load requirements. The expected growth of the system to multiple millions of nodes is going to create significant performance issues, which might render the system unusable. Despite the significant amount of related literature on the topic of pub/sub, very few systems have been tested to that level of scalability, while those that have been are mostly cloud-based, managed and structured infrastructures.</td>
-  </tr>  
+  </tr>
 
   <tr>
     <th><b>Data Exchange</b></th>
     <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/ENHANCED_BITSWAP_GRAPHSYNC.md">Enhanced Bitswap/GraphSync with more Network Smarts </a></b></td>
     <td>Bitswap is a simple protocol and it generally works. However, we feel that its performance can be substantially improved. One of the main factors that hold performance back is the fact that a node cannot request a subgraph of the DAG and results in many round-trips in order to “walk down” the DAG. The current operation of bitswap is also very often linked to duplicate transmission and receipt of content which overloads both the end nodes and the network.</td>
-  </tr>   
-   
+  </tr>
+
   <tr>
-    <th><b>Distributed Type Systems</b></th>  
+    <th><b>Distributed Type Systems</b></th>
     <td><b><a href="https://github.com/ipfs/notes/pull/394">Improved layouts to represent data in hash-linked graphs (using IPLD) </a></b></td>
     <td>Future™ ⚙️</td>
-  </tr>     
+  </tr>
 </table>
 
 ### Projects
 
 - Hydra Booster
-- Gossipsub v1.1 
+- Gossipsub v1.1
 - drand
 - [Beyond Bitswap](https://github.com/protocol/beyond-bitswap)
 - P2P Observatory
