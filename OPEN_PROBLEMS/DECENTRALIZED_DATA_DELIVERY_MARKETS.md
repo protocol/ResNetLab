@@ -179,7 +179,7 @@ When it comes to the state of the art, we found that the existing solutions fall
 
 #### Pay-per-packet
 
-Pay-per-packet solutions offer granular control over what gets paid, enabling the option to verify if the SLA is being fulfilled. However, their setup cost and latency overhead puts them behind on being able to max out the available underlay resources.
+Pay-per-packet solutions offer granular control over what gets paid, enabling the option to verify if the SLA is being fulfilled. However, their setup cost and latency overhead put them at a disadvantage in terms of maximizing utilization of the underlying resources.
 
 These type of solutions have been found/highlighted:
 
