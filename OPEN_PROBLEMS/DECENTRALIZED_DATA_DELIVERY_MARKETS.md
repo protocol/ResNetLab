@@ -122,7 +122,7 @@ Throughout the exploration of the design space, we identified 3 areas of work th
 
 ## Data Delivery Metering & Fair Exchange
 
-We believe that this area of work is where the main crux for Decentralized Data Delivery Markets come to reality. Without it (i.e. without relying on a verified mediator to serve as escrow and referee), it will be impossible to have a fully permissionless, decentralized and open market for data delivery.
+We believe that this area of work is the main crux for Decentralized Data Delivery Markets. Without it, it will be impossible to have a fully permissionless, decentralized, and open market for data delivery.
 
 #### How it is done traditionally
 
