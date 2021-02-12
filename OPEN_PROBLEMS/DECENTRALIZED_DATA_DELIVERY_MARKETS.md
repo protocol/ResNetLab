@@ -133,7 +133,7 @@ This trustless property is really important as we know that markets with no medi
 
 #### Properties desired
 
-*   The exchanges of value MUST be verifiable and correct
+*   The exchanges of value MUST be verifiable and fair
     *   Fairness:
         *   The payment MUST be fulfilled if the SLA is fulfilled
         *   The payment for bandwidth/latency SHOULD match what was agreed and provided
