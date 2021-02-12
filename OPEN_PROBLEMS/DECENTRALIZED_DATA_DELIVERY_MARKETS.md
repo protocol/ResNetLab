@@ -290,7 +290,7 @@ Last but not least, the system of overlay Provider nodes has to be permissionles
 
 How it is done traditionally (CDNs, P2P CDNs)
 
-Traditionally, content is stored, hosted, replicated and delivered by centralised CDNs. In those setups, **the CDN entity has full control over: i) the formation of the network**, e.g., where to place servers and how to interconnect them, both in terms of topology and in terms of bandwidth deployed between servers, **ii) the placement and replication of content**, i.e., where to put hot copies of content, as well as **iii) the network elements that are responsible for content resolution**.
+Traditionally, content is stored, hosted, replicated and delivered by centralised CDNs. In those setups, **the CDN entity has full control over: i) the formation of their network of servers**, e.g., in which geographic areas to place servers and how to interconnect them, both in terms of topology and in terms of bandwidth deployed between servers, **ii) the placement and replication of content**, i.e., where to put hot copies of content, as well as **iii) the network elements that are responsible for content resolution**.
 
 In a centralized setup it is much easier to optimise performance and provide guarantees, compared to the case where **every network node is operated by a separate (legal) entity that operates rationally in a profit-maximizing way**.
 
