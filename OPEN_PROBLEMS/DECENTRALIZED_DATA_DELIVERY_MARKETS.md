@@ -500,7 +500,9 @@ Auctions and decentralized markets have traditionally been a good way of allocat
 
 ResNetLab organized a Research Intensive Workshop on 3DMs, out of it, the following ideas, structured as RFCs emerged:
 
-*   Link to RFCs TO FILL
+* [RFC: QFIL Closed Retrieval Economy](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_QFIL%20Closed%20Retrieval%20Economy.md)
+* [RFC: No market 3DMs](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_NoMarkets3DM.md)
+* [RFC: Credit-based Retrieval Network](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Credit-based%20Retrieval%20Network)
 
 ## Additional: Opportunistic deployment
 
@@ -555,6 +557,6 @@ The incentive to participate and the cryptoeconomic model behind the opportunist
 
 ResNetLab organized a Research Intensive Workshop on 3DMs, out of which, the following ideas, structured as RFCs emerged:
 
-* [RFC: QFIL Closed Retrieval Economy](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_QFIL%20Closed%20Retrieval%20Economy.md)
-* [RFC: No market 3DMs](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_NoMarkets3DM.md)
-* [RFC: Credit-based Retrieval Network](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Credit-based%20Retrieval%20Network)
+* [RFC: Hybrid CDN with Recruiter Providers](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Hybrid%20CDN%20with%20Recruiter%20Providers.md)
+* [RFC: OS-level OppNet Component](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_OS-level%20OppNet%20Component.md)
+* [RFC: On-Demand Opportunistic Resource Deployment](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_On-Demand%20Opportunistic%20Resource%20Deployment.md)
