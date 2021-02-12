@@ -107,7 +107,6 @@ We present this list as a guide to protocol designers of what we expect a 3DM im
 
 Additional expectations (i.e. bonus points):
 
-*   Data SHOULD be readily available without having to wait for the [unsealing process](https://spec.filecoin.io/#section-glossary.seal) at storage nodes (e.g. Filecoin Storage Miners).
 *   Data retrieval SHOULD be anonymous and privacy-preserving.
 
 Other considerations:
