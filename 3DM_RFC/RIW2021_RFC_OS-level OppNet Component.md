@@ -1,8 +1,8 @@
 # RIW2021 | RFC: OS-level OppNet Component
 
-_Status:_ < draft >
+_Status:_ draft
 
-_Area of Improvement:_ < Opportunistic Deployments >
+_Area of Improvement:_ Opportunistic Deployments
 
 _Estimated Effort Needed:_ <?>
 
@@ -66,5 +66,4 @@ Compare performance benefit of one OS-level component that serves horizontally s
 ### Prior work
 
 TBA
-
 
