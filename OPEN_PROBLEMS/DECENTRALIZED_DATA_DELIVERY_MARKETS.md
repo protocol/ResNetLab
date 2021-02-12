@@ -374,7 +374,9 @@ In pubsub systems information propagates in the network based on topics that nod
 
 ResNetLab organized a Research Intensive Workshop on 3DMs, from which the following ideas emerged and were structured as RFCs:
 
-*   Link to RFCs TO FILL
+* [RFC: Incentive alignment for collaborative routing](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Incentive%20alignment%20for%20collaborative%20routing.md)
+* [RFC: Name-based Request Forwarding for Nearest Replica Routing](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Name-based%20Request%20Forwarding%20for%20Nearest%20Replica%20Routing.md)
+* [RFC: Omniscient Routers](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Omniscient%20Routers.md)
 
 ## CryptoEconomic model for Data Delivery
 
@@ -553,6 +555,6 @@ The incentive to participate and the cryptoeconomic model behind the opportunist
 
 ResNetLab organized a Research Intensive Workshop on 3DMs, out of which, the following ideas, structured as RFCs emerged:
 
-* [RIW2021|RFC: QFIL Closed Retrieval Economy](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_QFIL%20Closed%20Retrieval%20Economy.md)
-* [RIW2021|RFC: No market 3DMs](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_NoMarkets3DM.md)
-* [RIW2021|RFC: Credit-based Retrieval Network](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Credit-based%20Retrieval%20Network)
+* [RFC: QFIL Closed Retrieval Economy](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_QFIL%20Closed%20Retrieval%20Economy.md)
+* [RFC: No market 3DMs](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_NoMarkets3DM.md)
+* [RFC: Credit-based Retrieval Network](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Credit-based%20Retrieval%20Network)
