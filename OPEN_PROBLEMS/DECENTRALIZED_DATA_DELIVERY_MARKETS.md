@@ -428,7 +428,7 @@ The economics of current Hybrid CDN deployments give a good understanding of the
 *   [Value Networks and Two-Sided Markets of Internet Content Delivery](http://www.leva.fi/wp-content/uploads/ICN_2SM_TelecomPolicy_accepted_manuscript.pdf)
 *   [Bilateral and Multilateral Exchanges for Peer-Assisted Content Distribution](https://www.cs.princeton.edu/~mfreed/docs/bilateral-tr10.pdf)
 
-**_Learnings: _**
+**_Learnings:_**
 
 *   Protocols and systems involved in the cost model of a Hybrid-CDN.
 *   Models of P2P content delivery networks.
@@ -446,7 +446,7 @@ How to design the right incentive and reputation models to incentivize certain b
 *   [On Incentivizing Caching for P2P-VoD Systems](http://www.cse.cuhk.edu.hk/~cslui/PUBLICATION/netecon12.pdf)
 *   [Bar Gossip](https://static.usenix.org/event/osdi06/tech/full_papers/li/li.pdf)
 
-**_Learnings: _**
+**_Learnings:_**
 
 *   Use different metrics to evaluate the level of good behavior of peers.
 *   Examples of game theoretic models to approach the evaluation of these protocols.
@@ -465,7 +465,7 @@ Credit networks provide liquidity in markets where transaction volumes are close
 *   [MicroCash: Practical Concurrent Processing of Micropayments](https://arxiv.org/pdf/1911.08520.pdf)
 *   [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://www.ee.ucl.ac.uk/~ipsaras/files/Proof_of_Prestige-icbc19.pdf)
 
-**_Learnings: _**
+**_Learnings:_**
 
 *   Economics of credit networks.
 *   Using credit networks for fast payments and reputation systems.
@@ -483,7 +483,7 @@ Auctions and decentralized markets have traditionally been a good way of allocat
 *   [Resource Allocation in Market-based Grids Using a History-based Pricing Mechanism](http://ce-publications.et.tudelft.nl/publications/646_resource_allocation_in_marketbased_grids_using_a_historyba.pdf)
 *   [Content Pricing in Peer-to-Peer Networks](https://www.usenix.org/legacy/event/netecon10/tech/full_papers/Park.pdf)
 
-**_Learnings: _**
+**_Learnings:_**
 
 *   Use of auctions as an efficient way to allocate resources in a decentralized system.
 *   Local auction protocols. to drive the offer and demand of resources.
