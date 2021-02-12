@@ -267,8 +267,9 @@ Here we list the attacks to consider when designing a solution. These are:
 
 ResNetLab organized a Research Intensive Workshop on 3DMs, out of which, the following ideas, structured as RFCs emerged:
 
-* Link to RFCs:
-  * TOFILL
+* [RFC: ZKCP with Fair Exchanges of 1 bit](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_ZKCP%20with%20Fair%20Exchanges%20of%201%20bit.md)
+* [RFC: ZKCP Optimizations](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_ZKCP%20Optimizations.md)
+* [RFC_Optimistic ZKC(S)P](https://github.com/protocol/ResNetLab/pull/15)
 
 ## Distribution Graph Forming
 
