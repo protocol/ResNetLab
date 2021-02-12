@@ -551,7 +551,8 @@ The incentive to participate and the cryptoeconomic model behind the opportunist
 
 ### New ideas being explored
 
-ResNetLab organized a Research Intensive Workshop on 3DMs, out of it, the following ideas, structured as RFCs emerged:
+ResNetLab organized a Research Intensive Workshop on 3DMs, out of which, the following ideas, structured as RFCs emerged:
 
-Link to RFCs
-*   TO FILL
+* [RIW2021|RFC: QFIL Closed Retrieval Economy](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_QFIL%20Closed%20Retrieval%20Economy.md)
+* [RIW2021|RFC: No market 3DMs](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_NoMarkets3DM.md)
+* [RIW2021|RFC: Credit-based Retrieval Network](https://github.com/protocol/ResNetLab/blob/master/3DM_RFC/RIW2021_RFC_Credit-based%20Retrieval%20Network)
