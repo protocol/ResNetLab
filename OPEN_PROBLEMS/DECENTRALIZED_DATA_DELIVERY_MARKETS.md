@@ -179,7 +179,7 @@ When it comes to the state of the art, we found that the existing solutions fall
 
 #### Pay-per-packet
 
-Pay-per-packet solutions offer granular control over what gets paid, enabling the option to verify if the SLA is being fulfilled. However, their setup cost and latency overhead put them at a disadvantage in terms of maximizing utilization of the underlying resources.
+Pay-per-packet solutions offer granular control over what gets paid, enabling the option to verify if the SLA is being fulfilled. 
 
 These type of solutions have been found/highlighted:
 
@@ -187,7 +187,7 @@ These type of solutions have been found/highlighted:
 - [Theta Whitepaper](https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-latest.pdf?v=1612955013.791)
 
 **Known shortcomings of these approaches:**
-*   send-and-halt - Because the next packet (unit of service) will only be issued after payment for the previous is received, these solutions often fail to max out the bandwidth available in the connection, increasing the latency of delivery.
+  * send-and-halt - Because the next packet (unit of service) will only be issued after payment for the previous is received, these solutions often fail to max out the bandwidth available in the connection, if the service provider defaults to being conservative, hence increasing the latency of delivery.
 
 
 #### Lock/Unlock access to the resource
