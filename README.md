@@ -166,12 +166,12 @@ You can read more about these projects in this [blogpost](https://research.proto
 
 - February 2021: `Talk` FOSDEM (blogpost coming soon)
 - December 2020: [`Tutorial` IEEE Globecom](https://research.protocol.ai/blog/2021/ieee-globecom-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-- November 2020: [`Tutorial` CNSM](/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-- July 2020: [`Tutorial` IFIP/IEEE DSN](/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-- May 2020: [`Talk` NGN Group](/blog/2020/next-generation-networks-ngn-group-talk-a-high-level-overview-of-the-interplanetary-file-system/)
-- May 2020: [`Tutorial` IEEE ICBC](/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/)
-- April 2020: [`Talk` IRTF DINRG](/blog/2020/ipfs-talk-at-the-irtf-decentralised-internet-infrastructure-research-group-meeting)
-- March 2020: [`Talk` NDN Project Consortium](/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
+- November 2020: [`Tutorial` CNSM](https://research.protocol.ai/blog/2020/ieee/ifip-cnsm-2020-the-interplanetary-file-system-and-the-filecoin-network/)
+- July 2020: [`Tutorial` IFIP/IEEE DSN](https://research.protocol.ai/blog/2020/ieee/ifip-dsn-2020-the-interplanetary-file-system-and-the-filecoin-network/)
+- May 2020: [`Talk` NGN Group](https://research.protocol.ai/blog/2020/next-generation-networks-ngn-group-talk-a-high-level-overview-of-the-interplanetary-file-system/)
+- May 2020: [`Tutorial` IEEE ICBC](https://research.protocol.ai/blog/2020/ieee-icbc-2020-the-interplanetary-file-system-and-the-filecoin-network/)
+- April 2020: [`Talk` IRTF DINRG](https://research.protocol.ai/blog/2020/ipfs-talk-at-the-irtf-decentralised-internet-infrastructure-research-group-meeting)
+- March 2020: [`Talk` NDN Project Consortium](https://research.protocol.ai/blog/2020/ndn-seminar-a-high-level-overview-of-the-interplanetary-file-system/)
 - Spet 2019 - [`Tutorial` ACM ICN Tutorial: The InterPlanetary File System (IPFS)](https://conferences.sigcomm.org/acm-icn/2019/tutorial-IPFS.php)
 - July 2019 - [`Talk` A Brief History of Information-Centric Networks](https://github.com/protocol/research/issues/14#issuecomment-517048457)
 
