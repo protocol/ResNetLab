@@ -121,6 +121,7 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 
 - ONGOING
   - 3DMs: Decentralised Data Delivery Markets
+  - Content Routing Scale Up
   - P2P Observatory
   - ResNetLab on (Virtual) Tour:
 We have built a half-day tutorial to introduce the DWeb, the IPFS ecosystem, the IPFS architecture and its supporting protocols, and the high-level design decisions of the Filecoin network. In 2020, we have participated in multiple conferences and other academic events to discuss the exciting projects we're working on and invite great researchers to collaborate with us.
