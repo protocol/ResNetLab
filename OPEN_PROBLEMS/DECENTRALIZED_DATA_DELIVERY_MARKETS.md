@@ -219,7 +219,7 @@ These solutions build on top of the Fair Exchange ones and adopt an Optimistic a
 Reputation-based solutions give the possibility to speed up the transfer and improve the quality of the service by leveraging the trust built over time between clients & providers.
 
 - [Proof of Delivery in a Trustless Network](https://ieeexplore.ieee.org/document/8751417)
-- [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://www.ee.ucl.ac.uk/~ipsaras/files/Proof_of_Prestige-icbc19.pdf)
+- [Proof-of-Prestige: A Useful Work Reward System for Unverifiable Tasks](https://static.usenix.org/event/osdi06/tech/full_papers/li/li.pdf)
 - [Mechanisms for Outsourcing Computation via a Decentralized Market](https://scopelab.ai/files/eisele2020mechanisms.pdf)
 - Other Gradual Fair Exchange Class of constructions
 
