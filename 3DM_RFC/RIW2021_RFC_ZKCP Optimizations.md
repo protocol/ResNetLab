@@ -26,7 +26,7 @@ TBWRITTEN
             *   A group of providers can collaborate over a set of pre-encrypted files and issue the keys to the clients as they request
         *   Cons
             *   Opens the potential for a grieving attack, where multiple clients ask the provider to get the file, but then only one client pays for the decryption key
-                *   Open Problem: Need to find a way for individual parties to be unable to share the keys to decrypt the same cyphertext.
+                *   Open Problem: Need to find a way for individual parties to be unable to share the keys to decrypt the same ciphertext.
                 *    Perhaps the client specific key does one last, non expensive scramble?
 *   Optimization II
     *   Only prove a small n of chunks out of N
