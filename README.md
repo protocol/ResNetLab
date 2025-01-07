@@ -82,7 +82,7 @@ The lab's genesis comes from a need present in the IPFS and libp2p projects to a
 
   <tr>
     <th></th>
-    <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md">Preseve full users' privacy when providing and fetching Content</a></b></td>
+    <td><b><a href="https://github.com/protocol/ResNetLab/blob/master/OPEN_PROBLEMS/PRESERVE_USER_PRIVACY.md">Preserve full users' privacy when providing and fetching Content</a></b></td>
     <td>How to ensure that the user's of the IPFS network can collect and provide information while mainting their full anonymity.</td>
   </tr>
 
